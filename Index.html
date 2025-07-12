@@ -6,25 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AppAmbit</title>
     <link rel="icon" href="assets/Favicon.ico" />
-    <!-- <link rel="stylesheet" href="output.css" /> -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
+    <style>
+        #pricing-table th,
+        #pricing-table td {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            #pricing-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .feature-cell {
+                min-width: 160px;
+            }
+        }
+
+        /* Custom scrollbar for pricing table */
+        #pricing-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        #pricing-container::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+
+        #pricing-container::-webkit-scrollbar-thumb {
+            background: #4b5563;
+            border-radius: 4px;
+        }
+
+        #pricing-container::-webkit-scrollbar-thumb:hover {
+            background: #6b7280;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-900">
+<body class="bg-gray-900 text-white">
     <!-- Navbar -->
-    <nav class="bg-gray-900 sticky w-full z-20 top-0 start-0">
+    <nav id="main-navbar" class="bg-gray-900 sticky w-full z-50 top-0 start-0 transition-all duration-300">
         <div class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto px-4 py-3">
             <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
-                <img src="./assets/logo.svg" class="h-5 md:h-10" alt="AppAmbit Logo" />
-                <span class="self-center text-xs md:text-xl font-semibold whitespace-nowrap text-white">AppAmbit</span>
+                <img src="./assets/logo.svg" class="h-6 md:h-10" alt="AppAmbit Logo" />
+                <span class="self-center text-sm md:text-xl font-semibold whitespace-nowrap text-white">AppAmbit</span>
             </a>
             <div class="flex items-center md:order-2">
                 <div class="hidden md:flex items-center md:order-2">
                     <a href=""
                         class="text-white font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none">Dashboard</a>
                     <a href="#"
-                        class="text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 bg-[#D87800] hover:bg-[#B35108] focus:outline-none dark:focus:ring-primary-800">Get
+                        class="text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 bg-[#d87800] hover:bg-[#b35108] focus:outline-none dark:focus:ring-primary-800">Get
                         Started</a>
                 </div>
                 <button data-collapse-toggle="mobile-menu-2" type="button" id="menu-toggle"
@@ -70,7 +105,7 @@
                             Dashboard
                         </a>
                         <a href="#"
-                            class="block w-full text-center text-white bg-[#D87800] hover:bg-[#B35108] font-medium rounded-lg text-sm px-4 py-2">
+                            class="block w-full text-center text-white bg-[#d87800] hover:bg-[#b35108] font-medium rounded-lg text-sm px-4 py-2">
                             Get Started
                         </a>
                     </li>
@@ -92,7 +127,7 @@
                     Distribute builds to your Squad directly from CI/CD.
                 </p>
                 <a href="#"
-                    class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#D87800] hover:bg-[#B35108] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#d87800] hover:bg-[#b35108] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                     Get started
                     <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +145,7 @@
                 <img src="assets/app-mockup.png" alt="mockup" />
             </div>
 
-            
+
         </div>
     </section>
 
@@ -129,13 +164,13 @@
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div>
                     <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-[#104C70]">
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-[#104c70]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="5" cy="5" r="3" fill="#7BD3FB" />
-                            <circle cx="19" cy="19" r="3" fill="#7BD3FB" />
+                            <circle cx="5" cy="5" r="3" fill="#7bd3fb" />
+                            <circle cx="19" cy="19" r="3" fill="#7bd3fb" />
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10.25 5C10.25 4.58579 10.5858 4.25 11 4.25H16.1319C18.8831 4.25 19.9294 7.843 17.6083 9.32007L7.19703 15.9454C6.14197 16.6168 6.61756 18.25 7.86811 18.25H11.1893L10.9697 18.0303C10.6768 17.7374 10.6768 17.2626 10.9697 16.9697C11.2626 16.6768 11.7374 16.6768 12.0303 16.9697L13.5303 18.4697C13.8232 18.7626 13.8232 19.2374 13.5303 19.5303L12.0303 21.0303C11.7374 21.3232 11.2626 21.3232 10.9697 21.0303C10.6768 20.7374 10.6768 20.2626 10.9697 19.9697L11.1893 19.75H7.86811C5.11688 19.75 4.07061 16.157 6.39171 14.6799L16.803 8.05458C17.858 7.38318 17.3824 5.75 16.1319 5.75H11C10.5858 5.75 10.25 5.41421 10.25 5Z"
-                                fill="#7BD3FB" />
+                                fill="#7bd3fb" />
                         </svg>
                     </div>
                     <h3 class="mb-2 text-xl font-bold text-white">
@@ -148,11 +183,11 @@
                 </div>
                 <div>
                     <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104C70]">
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104c70]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.17157 3.17157C3 4.34315 3 6.22876 3 10V14C3 17.7712 3 19.6569 4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284C21 19.6569 21 17.7712 21 14V10C21 6.22876 21 4.34315 19.8284 3.17157C18.6569 2 16.7712 2 13 2H11C7.22876 2 5.34315 2 4.17157 3.17157ZM7.25 8C7.25 7.58579 7.58579 7.25 8 7.25H16C16.4142 7.25 16.75 7.58579 16.75 8C16.75 8.41421 16.4142 8.75 16 8.75H8C7.58579 8.75 7.25 8.41421 7.25 8ZM7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H16C16.4142 11.25 16.75 11.5858 16.75 12C16.75 12.4142 16.4142 12.75 16 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12ZM8 15.25C7.58579 15.25 7.25 15.5858 7.25 16C7.25 16.4142 7.58579 16.75 8 16.75H13C13.4142 16.75 13.75 16.4142 13.75 16C13.75 15.5858 13.4142 15.25 13 15.25H8Z"
-                                fill="#7BD3FB" />
+                                fill="#7bd3fb" />
                         </svg>
                     </div>
                     <h3 class="mb-2 text-xl font-bold text-white">
@@ -165,7 +200,7 @@
                 </div>
                 <div>
                     <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104C70]">
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104c70]">
                         <img class="w-6 h-6" src="assets/app-distribution.png" alt="App Distribution Icon" />
                     </div>
                     <h3 class="mb-2 text-xl font-bold text-white">
@@ -178,17 +213,17 @@
                 </div>
                 <div>
                     <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104C70]">
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104c70]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14 2H10C6.22876 2 4.34315 2 3.17157 3.17157C2 4.34315 2 6.22876 2 10V11C2 11.5516 2 12.0494 2.00652 12.5H12.6017C12.7054 11.8207 12.9376 11.1127 13.5251 10.5251C14.1432 9.90708 14.8946 9.68219 15.6056 9.5866C16.2512 9.4998 17.0449 9.49989 17.9105 9.49999H18.0895C18.9551 9.49989 19.7488 9.4998 20.3944 9.5866C20.9315 9.65881 21.4917 9.80481 22 10.1383V10C22 6.22876 22 4.34315 20.8284 3.17157C19.6569 2 17.7712 2 14 2Z"
-                                fill="#7BD3FB" />
+                                fill="#7bd3fb" />
                             <path
                                 d="M2.87868 16.1213C3.75736 17 5.17157 17 8 17H11.25V21H8C7.58579 21 7.25 21.3358 7.25 21.75C7.25 22.1642 7.58579 22.5 8 22.5H13.5505L13.5251 22.4749C12.9071 21.8568 12.6822 21.1054 12.5866 20.3944C12.4998 19.7488 12.4999 18.9551 12.5 18.0895V14.9105C12.4999 14.4116 12.4999 13.9365 12.5165 13.5H2.03835C2.10893 14.7579 2.30938 15.552 2.87868 16.1213Z"
-                                fill="#7BD3FB" />
+                                fill="#7bd3fb" />
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M22 15V18C22 19.8856 22 20.8284 21.4142 21.4142C20.8284 22 19.8856 22 18 22C16.1144 22 15.1716 22 14.5858 21.4142C14 20.8284 14 19.8856 14 18V15C14 13.1144 14 12.1716 14.5858 11.5858C15.1716 11 16.1144 11 18 11C19.8856 11 20.8284 11 21.4142 11.5858C22 12.1716 22 13.1144 22 15ZM16.25 20C16.25 19.5858 16.5858 19.25 17 19.25H19C19.4142 19.25 19.75 19.5858 19.75 20C19.75 20.4142 19.4142 20.75 19 20.75H17C16.5858 20.75 16.25 20.4142 16.25 20Z"
-                                fill="#7BD3FB" />
+                                fill="#7bd3fb" />
                         </svg>
                     </div>
                     <h3 class="mb-2 text-xl font-bold text-white">
@@ -201,12 +236,13 @@
                 </div>
                 <div>
                     <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104C70]">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104c70]">
+                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M14.2788 2.15224C13.9085 2 13.439 2 12.5 2C11.561 2 11.0915 2 10.7212 2.15224C10.2274 2.35523 9.83509 2.74458 9.63056 3.23463C9.53719 3.45834 9.50065 3.7185 9.48635 4.09799C9.46534 4.65568 9.17716 5.17189 8.69017 5.45093C8.20318 5.72996 7.60864 5.71954 7.11149 5.45876C6.77318 5.2813 6.52789 5.18262 6.28599 5.15102C5.75609 5.08178 5.22018 5.22429 4.79616 5.5472C4.47814 5.78938 4.24339 6.1929 3.7739 6.99993C3.30441 7.80697 3.06967 8.21048 3.01735 8.60491C2.94758 9.1308 3.09118 9.66266 3.41655 10.0835C3.56506 10.2756 3.77377 10.437 4.0977 10.639C4.57391 10.936 4.88032 11.4419 4.88029 12C4.88026 12.5581 4.57386 13.0639 4.0977 13.3608C3.77372 13.5629 3.56497 13.7244 3.41645 13.9165C3.09108 14.3373 2.94749 14.8691 3.01725 15.395C3.06957 15.7894 3.30432 16.193 3.7738 17C4.24329 17.807 4.47804 18.2106 4.79606 18.4527C5.22008 18.7756 5.75599 18.9181 6.28589 18.8489C6.52778 18.8173 6.77305 18.7186 7.11133 18.5412C7.60852 18.2804 8.2031 18.27 8.69012 18.549C9.17714 18.8281 9.46533 19.3443 9.48635 19.9021C9.50065 20.2815 9.53719 20.5417 9.63056 20.7654C9.83509 21.2554 10.2274 21.6448 10.7212 21.8478C11.0915 22 11.561 22 12.5 22C13.439 22 13.9085 22 14.2788 21.8478C14.7726 21.6448 15.1649 21.2554 15.3694 20.7654C15.4628 20.5417 15.4994 20.2815 15.5137 19.902C15.5347 19.3443 15.8228 18.8281 16.3098 18.549C16.7968 18.2699 17.3914 18.2804 17.8886 18.5412C18.2269 18.7186 18.4721 18.8172 18.714 18.8488C19.2439 18.9181 19.7798 18.7756 20.2038 18.4527C20.5219 18.2105 20.7566 17.807 21.2261 16.9999C21.6956 16.1929 21.9303 15.7894 21.9827 15.395C22.0524 14.8691 21.9088 14.3372 21.5835 13.9164C21.4349 13.7243 21.2262 13.5628 20.9022 13.3608C20.4261 13.0639 20.1197 12.558 20.1197 11.9999C20.1197 11.4418 20.4261 10.9361 20.9022 10.6392C21.2263 10.4371 21.435 10.2757 21.5836 10.0835C21.9089 9.66273 22.0525 9.13087 21.9828 8.60497C21.9304 8.21055 21.6957 7.80703 21.2262 7C20.7567 6.19297 20.522 5.78945 20.2039 5.54727C19.7799 5.22436 19.244 5.08185 18.7141 5.15109C18.4722 5.18269 18.2269 5.28136 17.8887 5.4588C17.3915 5.71959 16.7969 5.73002 16.3099 5.45096C15.8229 5.17191 15.5347 4.65566 15.5136 4.09794C15.4993 3.71848 15.4628 3.45833 15.3694 3.23463C15.1649 2.74458 14.7726 2.35523 14.2788 2.15224ZM12.5 15C14.1695 15 15.5228 13.6569 15.5228 12C15.5228 10.3431 14.1695 9 12.5 9C10.8305 9 9.47716 10.3431 9.47716 12C9.47716 13.6569 10.8305 15 12.5 15Z"
+                                d="M11.2788 0.152241C10.9085 0 10.439 0 9.5 0C8.56102 0 8.09153 0 7.72119 0.152241C7.2274 0.355229 6.83509 0.744577 6.63056 1.23463C6.53719 1.45834 6.50065 1.7185 6.48635 2.09799C6.46534 2.65568 6.17716 3.17189 5.69017 3.45093C5.20318 3.72996 4.60864 3.71954 4.11149 3.45876C3.77318 3.2813 3.52789 3.18262 3.28599 3.15102C2.75609 3.08178 2.22018 3.22429 1.79616 3.5472C1.47814 3.78938 1.24339 4.1929 0.773903 4.99993C0.304414 5.80697 0.069669 6.21048 0.017347 6.60491C-0.0524154 7.1308 0.0911811 7.66266 0.416547 8.08348C0.565055 8.27556 0.773773 8.43703 1.0977 8.63902C1.57391 8.93598 1.88032 9.44186 1.88029 10C1.88026 10.5581 1.57386 11.0639 1.0977 11.3608C0.773716 11.5629 0.564971 11.7244 0.416448 11.9165C0.0910824 12.3373 -0.0525141 12.8691 0.0172484 13.395C0.0695703 13.7894 0.304315 14.193 0.773804 15C1.24329 15.807 1.47804 16.2106 1.79606 16.4527C2.22008 16.7756 2.75599 16.9181 3.28589 16.8489C3.52778 16.8173 3.77305 16.7186 4.11133 16.5412C4.60852 16.2804 5.2031 16.27 5.69012 16.549C6.17714 16.8281 6.46533 17.3443 6.48635 17.9021C6.50065 18.2815 6.53719 18.5417 6.63056 18.7654C6.83509 19.2554 7.2274 19.6448 7.72119 19.8478C8.09153 20 8.56102 20 9.5 20C10.439 20 10.9085 20 11.2788 19.8478C11.7726 19.6448 12.1649 19.2554 12.3694 18.7654C12.4628 18.5417 12.4994 18.2815 12.5137 17.902C12.5347 17.3443 12.8228 16.8281 13.3098 16.549C13.7968 16.2699 14.3914 16.2804 14.8886 16.5412C15.2269 16.7186 15.4721 16.8172 15.714 16.8488C16.2439 16.9181 16.7798 16.7756 17.2038 16.4527C17.5219 16.2105 17.7566 15.807 18.2261 14.9999C18.6956 14.1929 18.9303 13.7894 18.9827 13.395C19.0524 12.8691 18.9088 12.3372 18.5835 11.9164C18.4349 11.7243 18.2262 11.5628 17.9022 11.3608C17.4261 11.0639 17.1197 10.558 17.1197 9.99991C17.1197 9.44185 17.4261 8.93608 17.9022 8.63919C18.2263 8.43715 18.435 8.27566 18.5836 8.08355C18.9089 7.66273 19.0525 7.13087 18.9828 6.60497C18.9304 6.21055 18.6957 5.80703 18.2262 5C17.7567 4.19297 17.522 3.78945 17.2039 3.54727C16.7799 3.22436 16.244 3.08185 15.7141 3.15109C15.4722 3.18269 15.2269 3.28136 14.8887 3.4588C14.3915 3.71959 13.7969 3.73002 13.3099 3.45096C12.8229 3.17191 12.5347 2.65566 12.5136 2.09794C12.4993 1.71848 12.4628 1.45833 12.3694 1.23463C12.1649 0.744577 11.7726 0.355229 11.2788 0.152241ZM9.5 13C11.1695 13 12.5228 11.6569 12.5228 10C12.5228 8.34315 11.1695 7 9.5 7C7.83053 7 6.47716 8.34315 6.47716 10C6.47716 11.6569 7.83053 13 9.5 13Z"
                                 fill="#7BD3FB" />
                         </svg>
+
                     </div>
                     <h3 class="mb-2 text-xl font-bold text-white">
                         Fast Integration
@@ -218,8 +254,8 @@
                 </div>
                 <div>
                     <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104C70]">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 text-[#7BD3FB]" fill="currentColor"
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-[#104c70]">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 text-[#7bd3fb]" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z">
@@ -245,34 +281,32 @@
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light  sm:text-lg text-gray-400">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
-                    Fast visibility. Easy distribution.
+                    Why AppAmbit?
                 </h2>
                 <p class="mb-4">
-                    Get the key insights you need — from user sessions to crashes — all
-                    through a simple interface.
+                    Rather than juggle multiple tools just to track events, catch crashes, and distribute builds.
+                    AppAmbit brings it all together with one SDK and one dashboard
                 </p>
-                <p>
-                    Distribute test builds automatically and keep your Squad in sync.
+                <p class="text-white font-bold">
+                    One tool. Fewer headaches. <br /> Most tools track or deliver. AppAmbit does both — fast.
                 </p>
             </div>
             <div class="grid grid-cols-2 gap-4 mt-8">
-                <img class="w-full rounded-lg" src="assets/office-long-1.png" alt="office content 1" />
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="assets/office-long-2.png" alt="office content 2" />
+                <img class="w-full rounded-lg" src="assets/Frame_1.png" alt="office content 1" />
+                <img class="w-full rounded-lg" src="assets/Frame_2.png" alt="office content 2" />
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="max-w-7xl mx-auto  mb-10">
+    <section id="pricing" class="max-w-7xl mx-auto mb-10">
         <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4 text-white">
-                Our Plans
-            </h1>
+            <h1 class="text-4xl font-bold mb-4">Our Plans</h1>
             <p class="text-gray-400 mb-8">Start building today at no cost.</p>
 
             <div class="flex justify-center mb-12">
                 <div class="rounded-full p-1 flex border border-gray-500">
-                    <button class="bg-[#D87800] px-6 py-2 rounded-full text-sm font-medium text-white cursor-pointer">
+                    <button class="bg-[#d87800] px-6 py-2 rounded-full text-sm font-medium cursor-pointer">
                         Monthly
                     </button>
                     <button class="px-6 py-2 rounded-full text-sm font-medium text-gray-400 cursor-pointer">
@@ -282,70 +316,67 @@
             </div>
         </div>
 
-        <div class="overflow-x-auto">
-            <table class="min-w-full">
-                <thead>
+        <div id="pricing-container" class="relative">
+            <table id="pricing-table" class="w-full border-collapse">
+                <thead class="sticky top-[60px] z-25 bg-gray-900 text-white">
+
                     <tr class="border-gray-300 md:text-2xl text-[#D87800] text-left">
-                        <th class="sticky left-0  z-10 font-bold w-50 p-3 bg-gray-900">
-                            All Features
-                        </th>
-                        <th class="font-bold p-3">Free</th>
-                        <th class="font-bold p-3">Developer</th>
-                        <th class="font-bold p-3">Builder</th>
-                        <th class="font-bold p-3">Pro</th>
+                        <th class="sticky left-0 z-10 font-bold w-50 p-3 bg-gray-900">All Features</th>
+                        <th>Free</th>
+                        <th>Developer</th>
+                        <th>Builder</th>
+                        <th>Pro</th>
                     </tr>
-                </thead>
-                <tbody class="text-white">
-                    <!-- Pricing Row -->
-                    <tr class="border-white">
-                        <td class="sticky left-0 z-10 text-gray-300 font-medium p-3 bg-gray-900"></td>
-                        <td class="p-3">
-                            <div class="mb-4">
-                                <div class="text-2xl font-bold text-white mb-2">
-                                    $0
-                                    <span class="text-sm text-[#7B7B7B] font-normal">/month</span>
+                    <tr class="">
+                        <td class="sticky left-0  z-10 font-bold w-50 p-3 bg-gray-900"></td>
+                        <td>
+                            <div>
+                                <div class="text-2xl font-bold mb-2">
+                                    $0 <span class="text-sm text-gray-500 font-normal">/month</span>
                                 </div>
                                 <button
-                                    class="bg-[#D87800] hover:bg-[#B35108] text-white border-0 px-6 py-2 rounded-full w-[150px] cursor-pointer">
+                                    class="bg-[#d87800] hover:bg-[#b35108] text-white px-6 py-2 rounded-full w-[150px] cursor-pointer">
                                     Get Free
                                 </button>
                             </div>
                         </td>
-                        <td class="p-3">
-                            <div class="mb-4">
+                        <td>
+                            <div>
                                 <div class="text-2xl font-bold mb-2">
-                                    $5 <span class="text-sm font-normal text-[#7B7B7B]">/month</span>
+                                    $5 <span class="text-sm text-gray-500 font-normal">/month</span>
                                 </div>
                                 <button
-                                    class="bg-[#D87800] hover:bg-[#B35108] text-white border-0 px-6 py-2 rounded-full w-[150px] cursor-pointer">
+                                    class="bg-[#d87800] hover:bg-[#b35108] text-white px-6 py-2 rounded-full w-[150px] cursor-pointer">
                                     Get Developer
                                 </button>
                             </div>
                         </td>
-                        <td class="p-3">
-                            <div class="mb-4">
+                        <td>
+                            <div>
                                 <div class="text-2xl font-bold mb-2">
-                                    $29 <span class="text-sm font-normal text-[#7B7B7B]">/month</span>
+                                    $29 <span class="text-sm text-gray-500 font-normal">/month</span>
                                 </div>
                                 <button
-                                    class="bg-[#D87800] hover:bg-[#B35108] text-white border-0 px-6 py-2 rounded-full w-[150px] cursor-pointer">
+                                    class="bg-[#d87800] hover:bg-[#b35108] text-white px-6 py-2 rounded-full w-[150px] cursor-pointer">
                                     Get Builder
                                 </button>
                             </div>
                         </td>
-                        <td class="p-3">
-                            <div class="mb-4">
+                        <td>
+                            <div>
                                 <div class="text-2xl font-bold mb-2">
-                                    $199 <span class="text-sm font-normal text-[#7B7B7B]">/month</span>
+                                    $199 <span class="text-sm text-gray-500 font-normal">/month</span>
                                 </div>
                                 <button
-                                    class="bg-[#D87800] hover:bg-[#B35108] text-white border-0 px-6 py-2 rounded-full w-[150px] cursor-pointer">
+                                    class="bg-[#d87800] hover:bg-[#b35108] text-white px-6 py-2 rounded-full w-[150px] cursor-pointer">
                                     Get Pro
                                 </button>
                             </div>
                         </td>
                     </tr>
+                </thead>
 
+                <tbody class="text-white">
                     <tr class="border-b border-gray-800">
                         <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
                             Included Requests
@@ -547,54 +578,12 @@
                     </tr>
                     <tr class="border-b border-gray-800">
                         <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
-                            App Releases
+                            App Distributions
                         </td>
                         <td class="p-3">3/month</td>
                         <td class="p-3">10/month</td>
                         <td class="p-3">100/month</td>
                         <td class="p-3">Unlimited</td>
-                    </tr>
-                    <tr class="border-b border-gray-800">
-                        <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
-                            Squads
-                        </td>
-                        <td class="p-3"></td>
-                        <td class="p-3"></td>
-                        <td class="p-3">
-                            <span class="inline-flex items-center">
-                                <svg class="w-4 h-4 text-green-500 mr-1 inline" fill="none" stroke="currentColor"
-                                    stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Yes
-                            </span>
-                        </td>
-                        <td class="p-3">
-                            <span class="inline-flex items-center">
-                                <svg class="w-4 h-4 text-green-500 mr-1 inline" fill="none" stroke="currentColor"
-                                    stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Yes
-                            </span>
-                        </td>
-                    </tr>
-                    <tr class="border-b border-gray-800">
-                        <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
-                            Extend Retention
-                        </td>
-                        <td class="p-3"></td>
-                        <td class="p-3"></td>
-                        <td class="p-3"></td>
-                        <td class="p-3">
-                            <span class="inline-flex items-center">
-                                <svg class="w-4 h-4 text-green-500 mr-1 inline" fill="none" stroke="currentColor"
-                                    stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Yes
-                            </span>
-                        </td>
                     </tr>
                     <tr class="border-b border-gray-800">
                         <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
@@ -610,6 +599,31 @@
                                 Yes
                             </span>
                         </td>
+                        <td class="p-3">
+                            <span class="inline-flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-1 inline" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Yes
+                            </span>
+                        </td>
+                        <td class="p-3">
+                            <span class="inline-flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-1 inline" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Yes
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-gray-800">
+                        <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
+                            Squads
+                        </td>
+                        <td class="p-3"></td>
+                        <td class="p-3"></td>
                         <td class="p-3">
                             <span class="inline-flex items-center">
                                 <svg class="w-4 h-4 text-green-500 mr-1 inline" fill="none" stroke="currentColor"
@@ -654,6 +668,33 @@
                             </span>
                         </td>
                     </tr>
+                    <tr class="border-b border-gray-800">
+                        <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
+                            Extend Retention
+                        </td>
+                        <td class="p-3"></td>
+                        <td class="p-3"></td>
+                        <td class="p-3"></td>
+                        <td class="p-3">
+                            <span class="inline-flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-1 inline" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Yes
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-gray-800">
+                        <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-gray-900">
+                            Support
+                        </td>
+                        <td class="p-3">Community</td>
+                        <td class="p-3">Community</td>
+                        <td class="p-3">Community</td>
+                        <td class="p-3">Priority Email</td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
