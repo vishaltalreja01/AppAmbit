@@ -58,6 +58,8 @@ const closeModal = document.getElementById("closeModal");
 starterPlanLink.addEventListener("click", () => {
   starterPlanModal.classList.remove("hidden");
   starterPlanModal.classList.add("flex");
+
+  document.getElementById("modal-monthly-btn").click();
 });
 
 // Close modal
