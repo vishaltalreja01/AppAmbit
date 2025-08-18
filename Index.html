@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AppAmbit</title>
-    <link rel="icon" href="assets/Favicon.ico" />
+    <link rel="icon" href="assets/logo.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: "class" }
+    </script>
+
     <style>
         @media (max-width: 768px) {
             #pricing-container {
@@ -36,6 +40,7 @@
         #pricing-container::-webkit-scrollbar-thumb:hover {
             background: #6b7280;
         }
+
     </style>
 </head>
 
@@ -45,49 +50,66 @@
         class="bg-white dark:bg-gray-900 sticky w-full z-50 top-0 start-0 transition-all duration-300">
         <div class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto px-4 py-3">
             <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
-                <svg width="38" height="38" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                        d="M46 23C46 35.7025 35.7025 46 23 46C10.2975 46 0 35.7025 0 23C0 10.2975 10.2975 0 23 0C35.7025 0 46 10.2975 46 23ZM7.51981 23C7.51981 31.5495 14.4505 38.4802 23 38.4802C31.5495 38.4802 38.4802 31.5495 38.4802 23C38.4802 14.4505 31.5495 7.51981 23 7.51981C14.4505 7.51981 7.51981 14.4505 7.51981 23Z"
-                        fill="#27A9E0" />
+                        d="M46 23.0004C46 35.6833 35.6829 46.0004 23 46.0004C20.9939 46.0004 18.9906 45.7363 17.0491 45.2193L18.9372 38.1614C20.2634 38.5155 21.6289 38.6953 23 38.6953C31.6538 38.6953 38.6949 31.6542 38.6949 23.0004C38.6949 22.7616 38.6893 22.5228 38.6752 22.284C39.535 22.888 40.5802 23.2392 41.6872 23.2392C42.1423 23.2392 42.6003 23.1802 43.0442 23.0594C44.2159 22.7476 45.2189 22.0564 45.9214 21.0898C45.9747 21.7248 46 22.3626 46 23.0004Z"
+                        fill="#26A7DF" />
                     <path
-                        d="M41.8443 26.8826C43.8781 27.3016 45.8995 25.988 45.9819 23.9131C46.1431 19.8547 45.2271 15.8017 43.2951 12.1784C40.7698 7.44234 36.6677 3.73861 31.6992 1.70858C26.7306 -0.321438 21.2086 -0.549908 16.0894 1.06274C12.1729 2.29651 8.68082 4.54847 5.95398 7.55865C4.55987 9.09763 5.08307 11.4509 6.82843 12.5759C8.57379 13.701 10.8759 13.1533 12.3877 11.7298C14.0746 10.1415 16.1085 8.94082 18.3488 8.23509C21.7943 7.14969 25.5109 7.30346 28.855 8.66977C32.1991 10.0361 34.96 12.5289 36.6597 15.7165C37.7648 17.7891 38.376 20.0705 38.468 22.3856C38.5505 24.4605 39.8105 26.4635 41.8443 26.8826Z"
-                        fill="#13CEBB" />
-                    <g filter="url(#filter0_d_26_24)">
-                        <path
-                            d="M13.7743 6.11607C12.7785 4.29383 10.4694 3.6016 8.83353 4.88062C6.12525 6.99809 3.91296 9.70627 2.37687 12.8173C0.283005 17.0581 -0.452622 21.8412 0.270206 26.5152C0.993034 31.1891 3.13917 35.5266 6.41625 38.9367C8.82036 41.4384 11.7474 43.3518 14.9688 44.5523C16.9146 45.2774 18.9067 43.9199 19.3055 41.8821C19.7042 39.8442 18.3431 37.9085 16.4609 37.0313C14.7389 36.2287 13.1695 35.1115 11.8383 33.7262C9.63263 31.431 8.18817 28.5117 7.70167 25.3659C7.21517 22.2201 7.71028 19.0008 9.11957 16.1465C9.97014 14.4239 11.1287 12.8847 12.5279 11.5995C14.0571 10.1948 14.77 7.93831 13.7743 6.11607Z"
-                            fill="#F6931D" />
-                    </g>
+                        d="M42.6339 21.5221C42.3164 21.6064 41.9989 21.6457 41.6871 21.6457C40.0743 21.6457 38.5964 20.5696 38.1609 18.9344C36.3318 12.0872 30.0971 7.30516 22.9999 7.30516C19.957 7.30516 17.0462 8.16492 14.5456 9.77205C14.5596 9.62314 14.5653 9.47141 14.5653 9.31969C14.5653 7.91766 14.0202 6.59993 13.0284 5.61092C12.1714 4.75397 11.07 4.22856 9.88153 4.10494C13.7027 1.43574 18.2431 0 22.9999 0C33.3985 0 42.5356 7.01014 45.2188 17.0491C45.7386 18.999 44.581 20.9995 42.6339 21.5221Z"
+                        fill="#40BEB2" />
                     <path
-                        d="M39.0964 33.5397C40.8337 34.6773 41.34 37.0341 39.9349 38.563C38.6341 39.9786 37.1575 41.2291 35.5375 42.2824C32.8635 44.0211 29.857 45.1846 26.7092 45.6989C23.5613 46.2133 20.3409 46.0674 17.2525 45.2703C15.3815 44.7874 13.5837 44.072 11.8999 43.1442C10.0812 42.142 9.81099 39.7466 11.0958 38.1153C12.3806 36.4839 14.7357 36.2533 16.6281 37.108C17.4338 37.4719 18.2712 37.767 19.1316 37.9891C21.2103 38.5255 23.3778 38.6238 25.4965 38.2776C27.6151 37.9314 29.6386 37.1483 31.4384 35.9781C32.1834 35.4937 32.8833 34.9473 33.5312 34.3459C35.0532 32.9332 37.3592 32.4022 39.0964 33.5397Z"
-                        fill="#27A9E0" />
+                        d="M12.9245 40.3356C12.6042 41.5353 12.7278 42.7519 13.197 43.8083C5.26252 40.0715 0 32.0077 0 22.9999C0 16.8579 2.39384 11.0812 6.7376 6.73748C8.16492 5.31016 10.4773 5.31016 11.9018 6.73748C13.3291 8.16198 13.3291 10.4772 11.9018 11.9017C8.93758 14.8659 7.30516 18.8078 7.30516 22.9999C7.30516 28.9452 10.6627 34.2835 15.7791 36.9359C14.4052 37.5765 13.3347 38.7987 12.9245 40.3356Z"
+                        fill="#F59220" />
                     <path
-                        d="M31.3895 14.8715C31.6432 14.0936 30.9064 13.3569 30.1286 13.6107L11.2809 19.7608C10.3285 20.0716 10.374 21.4342 11.345 21.6808L20.3179 23.959C20.6733 24.0493 20.9508 24.3267 21.0411 24.682L23.3209 33.6555C23.5676 34.6265 24.9301 34.6718 25.2408 33.7194L31.3895 14.8715Z"
+                        d="M23 45.9996C20.9939 45.9996 18.9906 45.7355 17.0491 45.2186C15.0992 44.6988 13.9416 42.6955 14.4642 40.7455C14.984 38.7956 16.9873 37.6409 18.9372 38.1606C20.2634 38.5147 21.6317 38.6945 23.0028 38.6945C25.0202 38.6945 26.6554 40.3297 26.6554 42.3471C26.6554 44.3644 25.0174 45.9996 23 45.9996Z"
+                        fill="#26A7DF" />
+                    <path
+                        d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
+                        fill="#070707" />
+                    <path
+                        d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
                         fill="" class="fill-black dark:fill-white" />
-                    <defs>
-                        <filter id="filter0_d_26_24" x="0" y="4.22595" width="19.3752" height="40.5238"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset />
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_26_24" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_24" result="shape" />
-                        </filter>
-                    </defs>
                 </svg>
+
+
                 <span
                     class="self-center text-sm md:text-xl font-bold whitespace-nowrap text-gray-900 dark:text-white">AppAmbit</span>
             </a>
             <div class="flex items-center md:order-2">
                 <div class="hidden md:flex items-center md:order-2">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" type="button"
+                        class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <!-- Moon icon -->
+
+                        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                fill="#D87800" />
+                        </svg>
+
+
+                        <!-- Sun icon -->
+                        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z"
+                                fill="#D87800" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V3C12.75 3.41421 12.4142 3.75 12 3.75C11.5858 3.75 11.25 3.41421 11.25 3V2C11.25 1.58579 11.5858 1.25 12 1.25ZM4.39861 4.39861C4.6915 4.10572 5.16638 4.10572 5.45927 4.39861L5.85211 4.79145C6.145 5.08434 6.145 5.55921 5.85211 5.85211C5.55921 6.145 5.08434 6.145 4.79145 5.85211L4.39861 5.45927C4.10572 5.16638 4.10572 4.6915 4.39861 4.39861ZM19.6011 4.39887C19.894 4.69176 19.894 5.16664 19.6011 5.45953L19.2083 5.85237C18.9154 6.14526 18.4405 6.14526 18.1476 5.85237C17.8547 5.55947 17.8547 5.0846 18.1476 4.79171L18.5405 4.39887C18.8334 4.10598 19.3082 4.10598 19.6011 4.39887ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H3C3.41421 11.25 3.75 11.5858 3.75 12C3.75 12.4142 3.41421 12.75 3 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM20.25 12C20.25 11.5858 20.5858 11.25 21 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H21C20.5858 12.75 20.25 12.4142 20.25 12ZM18.1476 18.1476C18.4405 17.8547 18.9154 17.8547 19.2083 18.1476L19.6011 18.5405C19.894 18.8334 19.894 19.3082 19.6011 19.6011C19.3082 19.894 18.8334 19.894 18.5405 19.6011L18.1476 19.2083C17.8547 18.9154 17.8547 18.4405 18.1476 18.1476ZM5.85211 18.1479C6.145 18.4408 6.145 18.9157 5.85211 19.2086L5.45927 19.6014C5.16638 19.8943 4.6915 19.8943 4.39861 19.6014C4.10572 19.3085 4.10572 18.8336 4.39861 18.5407L4.79145 18.1479C5.08434 17.855 5.55921 17.855 5.85211 18.1479ZM12 20.25C12.4142 20.25 12.75 20.5858 12.75 21V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V21C11.25 20.5858 11.5858 20.25 12 20.25Z"
+                                fill="#D87800" />
+                        </svg>
+
+                    </button>
+
                     <a href=""
                         class="text-gray-700 dark:text-white font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none hover:text-gray-900 dark:hover:text-white">
                         Dashboard
                     </a>
                     <a href="#"
                         class="text-white dark:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 bg-[#d87800] hover:bg-[#b35108] focus:outline-none dark:focus:ring-primary-800">
-                        Get Started
+                        Start for free
                     </a>
                 </div>
                 <button data-collapse-toggle="mobile-menu-2" type="button" id="menu-toggle"
@@ -121,12 +143,6 @@
                             Features
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 border-b lg:border-0 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white border-gray-200 dark:border-gray-700 lg:p-0">
-                            Contact
-                        </a>
-                    </li> -->
                     <li>
                         <a href="#pricing"
                             class="block py-2 pr-4 pl-3 border-b lg:border-0 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white border-gray-200 dark:border-gray-700 lg:p-0">
@@ -135,13 +151,14 @@
                     </li>
 
                     <li class="block lg:hidden px-4 mt-4">
+
                         <a href="#"
                             class="block w-full text-center text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-medium rounded-lg text-sm px-4 py-2 mb-2">
                             Dashboard
                         </a>
                         <a href="#"
                             class="block w-full text-center text-white bg-[#d87800] hover:bg-[#b35108] font-medium rounded-lg text-sm px-4 py-2">
-                            Start For Free
+                            Start for free
                         </a>
                     </li>
                 </ul>
@@ -151,21 +168,19 @@
 
 
     <!-- Hero Section -->
-    <!-- Hero Section - Light & Dark Theme -->
     <section class="bg-white dark:bg-gray-900">
-        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
                 <h1
                     class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl text-gray-900 dark:text-white">
                     Track. Debug. Distribute.
                 </h1>
-                <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-gray-600 dark:text-gray-400">
-                    Track events, logs, crashes, and release usage with a single SDK.
-                    Distribute builds to your Squad directly from CI/CD.
+                <p class="max-w-2xl mb-6 font-normal lg:mb-8 md:text-lg lg:text-xl text-gray-700 dark:text-gray-400">
+                    AppAmbit helps your team move faster with instant insights and automatic build distribution.
                 </p>
                 <a href="#"
                     class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#d87800] hover:bg-[#b35108] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                    Start For Free
+                    Start for free
                 </a>
                 <a href="#"
                     class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border rounded-lg focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-800 text-gray-700 border-gray-300 hover:bg-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700">
@@ -183,13 +198,15 @@
     <section id="features" class="bg-white dark:bg-gray-900">
         <div class="pt-16 px-4 mx-auto max-w-screen-xl sm:py-20 lg:px-6">
             <div class="max-w-screen-md mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                    Simple by design. Powerful by default.
+                <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+                    Built for speed. Designed for clarity.
                 </h2>
-                <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-                    AppAmbit is fast to integrate, easy to use, and priced to grow with
-                    you.No clutter. No bloat. Just the features mobile teams need.
+                <p class="text-gray-600 sm:text-xl dark:text-gray-400">
+                    AppAmbit gives you visibility and delivery in minutes — with zero fluff. <br />It fits into your
+                    workflow, not on top of it.
                 </p>
+                <p class="text-gray-600 sm:text-xl dark:text-gray-400 font-medium mt-2">Built for indie devs, mobile
+                    teams, and agencies who need results, not complexity.</p>
             </div>
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div>
@@ -206,7 +223,7 @@
                     <h3 class="mb-2 text-2xl font-bold text-black dark:text-white">
                         Event Tracking
                     </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
+                    <p class="text-gray-600 dark:text-gray-400">
                         Capture user actions as they happen. Follow key flows and behavior
                         across every app session.
                     </p>
@@ -221,9 +238,9 @@
                         </svg>
                     </div>
                     <h3 class="mb-2 text-2xl font-bold text-black dark:text-white">
-                        Logs & Crashes
+                        Diagnostics
                     </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
+                    <p class="text-gray-600 dark:text-gray-400">
                         Get the latest logs and crash reports instantly. Quickly spot
                         issues across devices and environments.
                     </p>
@@ -236,7 +253,7 @@
                     <h3 class="mb-2 text-2xl font-bold text-black dark:text-white">
                         App Distribution
                     </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
+                    <p class="text-gray-600 dark:text-gray-400">
                         Deliver new builds straight from your CI/CD pipeline. Notify your
                         Squad and install to test devices in seconds.
                     </p>
@@ -257,11 +274,11 @@
                         </svg>
                     </div>
                     <h3 class="mb-2 text-2xl font-bold text-black dark:text-white">
-                        Session Insights
+                        Audience Insights
                     </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
+                    <p class="text-gray-600 dark:text-gray-400">
                         Track active sessions and usage patterns over time. Understand how
-                        users engage — and when they drop off.
+                        users engage and when they drop off.
                     </p>
                 </div>
                 <div>
@@ -277,7 +294,7 @@
                     <h3 class="mb-2 text-2xl font-bold text-black dark:text-white">
                         Fast Integration
                     </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
+                    <p class="text-gray-600 dark:text-gray-400">
                         Add the SDK in minutes with minimal setup. Supports .NET MAUI,
                         Swift, Objective-C, Android, and more.
                     </p>
@@ -298,7 +315,7 @@
                     <h3 class="mb-2 text-2xl font-bold text-black dark:text-white">
                         Flexible Pricing
                     </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
+                    <p class="text-gray-600 dark:text-gray-400">
                         Subscription plans with included usage — pay only when you go
                         beyond. Set hard caps to control costs and scale on your terms.
                     </p>
@@ -310,20 +327,24 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-10 lg:px-6">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                <h2 class="mb-6 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
                     Why AppAmbit?
                 </h2>
-                <p class="mb-4 text-black sm:text-xl dark:text-gray-400">
+                <p class="mb-6 text-black font-normal sm:text-xl dark:text-gray-400">
                     Rather than juggle multiple tools just to track events, catch crashes, and distribute builds.
-                    AppAmbit brings it all together with one SDK and one dashboard
+                    AppAmbit brings it all together with one SDK and one dashboard.
                 </p>
                 <p class="text-black dark:text-white font-bold">
                     One tool. Fewer headaches. <br /> <u>Most tools track or deliver. AppAmbit does both — fast.</u>
                 </p>
             </div>
-            <div class="grid grid-cols-2 gap-4 mt-8">
-                <img class="w-full rounded-lg" src="assets/Frame_1.png" alt="office content 1" />
-                <img class="w-full rounded-lg" src="assets/Frame_2.png" alt="office content 2" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 items-center">
+                <div class="flex justify-center md:justify-start">
+                    <img class="w-[250px] md:w-auto rounded-lg" src="assets/Frame_1.png" alt="office content 1" />
+                </div>
+                <div class="flex justify-center md:justify-start">
+                    <img class="w-80 md:w-auto rounded-lg" src="assets/Frame_2.png" alt="office content 2" />
+                </div>
             </div>
         </div>
     </section>
@@ -355,8 +376,8 @@
                         <th class="sticky left-0 z-10 font-bold w-50 p-3 bg-white dark:bg-gray-900"></th>
                         <th>Free</th>
                         <th>Developer</th>
-                        <th>Builder</th>
                         <th>Pro</th>
+                        <th>Business</th>
                     </tr>
                     <tr>
                         <td class="sticky left-0 z-10 font-bold w-50 p-3 bg-white dark:bg-gray-900"></td>
@@ -373,8 +394,8 @@
                         </td>
                         <td>
                             <div>
-                                <div class="text-2xl font-bold mb-2 price" data-monthly="5" data-annual="4">
-                                    $5 <span class="text-sm text-gray-500 font-normal">/month</span>
+                                <div class="text-2xl font-bold mb-2 price" data-monthly="11.99" data-annual="9.99">
+                                    $11.99 <span class="text-sm text-gray-500 font-normal">/month</span>
                                 </div>
                                 <button
                                     class="bg-[#d87800] hover:bg-[#b35108] text-white px-6 py-2 rounded-full w-[150px] cursor-pointer">
@@ -384,23 +405,23 @@
                         </td>
                         <td>
                             <div>
-                                <div class="text-2xl font-bold mb-2 price" data-monthly="29" data-annual="25">
-                                    $29 <span class="text-sm text-gray-500 font-normal">/month</span>
+                                <div class="text-2xl font-bold mb-2 price" data-monthly="29.9" data-annual="23.99">
+                                    $29.99 <span class="text-sm text-gray-500 font-normal">/month</span>
                                 </div>
                                 <button
                                     class="bg-[#d87800] hover:bg-[#b35108] text-white px-6 py-2 rounded-full w-[150px] cursor-pointer">
-                                    Get Builder
+                                    Get Pro
                                 </button>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <div class="text-2xl font-bold mb-2 price" data-monthly="199" data-annual="169">
-                                    $199 <span class="text-sm text-gray-500 font-normal">/month</span>
+                                <div class="text-2xl font-bold mb-2 price" data-monthly="199.99" data-annual="158.99">
+                                    $199.99 <span class="text-sm text-gray-500 font-normal">/month</span>
                                 </div>
                                 <button
                                     class="bg-[#d87800] hover:bg-[#b35108] text-white px-6 py-2 rounded-full w-[150px] cursor-pointer">
-                                    Get Pro
+                                    Get Business
                                 </button>
                             </div>
                         </td>
@@ -410,23 +431,22 @@
                 <tbody class="text-black dark:text-white">
                     <tr class="border-b border-gray-200 dark:border-gray-700">
                         <td class="sticky left-0  z-10 text-[#7b7b7b] font-medium p-3 bg-white dark:bg-gray-900">
-                            Included Requests
+                            API Requests
                         </td>
                         <td class="p-3">
                             25K
-
                         </td>
                         <td class="p-3">
                             250K
-                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.75 / 100k requests</span>
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$1.50 / 100k</span>
                         </td>
                         <td class="p-3">
                             2.5M
-                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.75 / 100k requests</span>
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$1.20 / 100k</span>
                         </td>
                         <td class="p-3">
                             12.5M
-                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.75 / 100k requests</span>
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$1.00 / 100k</span>
                         </td>
                     </tr>
                     <tr class="border-b border-gray-200 dark:border-gray-700">
@@ -434,53 +454,80 @@
                             DB Storage
                         </td>
                         <td class="p-3">100MB</td>
-                        <td class="p-3">500MB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                        <td class="p-3">2GB
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.40 / GB</span>
                         </td>
-                        <td class="p-3">5GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                        <td class="p-3">10GB
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.30 / GB</span>
                         </td>
-                        <td class="p-3">25GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                        <td class="p-3">50GB
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.25 / GB</span>
                         </td>
                     </tr>
                     <tr class="border-b border-gray-200 dark:border-gray-700">
                         <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-white dark:bg-gray-900">
                             File Storage
                         </td>
-                        <td class="p-3">500MB</td>
-                        <td class="p-3">1GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                        <td class="p-3">100MB</td>
+                        <td class="p-3">5GB
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.10 / GB</span>
                         </td>
-                        <td class="p-3">10GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                        <td class="p-3">20GB
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.10 / GB</span>
                         </td>
                         <td class="p-3">100GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.05 / GB</span>
                         </td>
                     </tr>
                     <tr class="border-b border-gray-200 dark:border-gray-700">
                         <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-white dark:bg-gray-900">
                             Data Transfer
                         </td>
-                        <td class="p-3">500MB</td>
-                        <td class="p-3">1GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
-                        </td>
+                        <td class="p-3">250MB</td>
                         <td class="p-3">10GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.30 / GB</span>
                         </td>
-                        <td class="p-3">100GB
-                            <span class="block text-xs text-[#7B7B7B] mt-1">+$1.00 / GB</span>
+                        <td class="p-3">50GB
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.25 / GB</span>
+                        </td>
+                        <td class="p-3">200GB
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.20 / GB</span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                        <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-white dark:bg-gray-900">
+                            Live Updates
+                        </td>
+                        <td class="p-3">5 min</td>
+                        <td class="p-3">3 hr
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.50 / hr</span>
+                        </td>
+                        <td class="p-3">10 hr
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.40 / hr</span>
+                        </td>
+                        <td class="p-3">50 hr
+                            <span class="block text-xs text-[#7B7B7B] mt-1">$0.30 / hr</span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                        <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-white dark:bg-gray-900">
+                            Release Distributions
+                        </td>
+                        <td class="p-3">0</td>
+                        <td class="p-3">50
+                        </td>
+                        <td class="p-3">100
+                        </td>
+                        <td class="p-3">Unlimited
                         </td>
                     </tr>
                     <tr class="border-b border-gray-200 dark:border-gray-700">
                         <td class="sticky left-0  z-10 text-[#7B7B7B] font-medium p-3 bg-white dark:bg-gray-900">
                             Data Retention
                         </td>
-                        <td class="p-3">30 days</td>
+                        <td class="p-3">7 days</td>
                         <td class="p-3">90 days</td>
-                        <td class="p-3">1 Year</td>
+                        <td class="p-3">180 days</td>
                         <td class="p-3">Custom</td>
                     </tr>
 
@@ -738,8 +785,10 @@
             </div>
 
             <!-- Modal -->
-            <div id="starterPlanModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
-                <div class="bg-white dark:bg-gray-900 rounded-xl shadow-2xl max-w-2xl w-full p-8 relative border-2 border-gray-200 dark:border-gray-700">
+            <div id="starterPlanModal"
+                class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50 overflow-y-auto">
+                <div
+                    class="bg-white dark:bg-gray-900 rounded-xl shadow-2xl max-w-2xl w-full max-h-[95vh] overflow-y-auto p-8 relative border-2 border-gray-200 dark:border-gray-700">
 
                     <!-- Close button -->
                     <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition"
@@ -749,7 +798,8 @@
 
                     <!-- Modal Header -->
                     <div class="text-center">
-                        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-black dark:text-white">Starter plan for students and solo devs</h2>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-black dark:text-white">Starter plan for
+                            students and solo devs</h2>
                         <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">
                             Start building today at no cost.
                         </p>
@@ -779,8 +829,9 @@
                                 <td class="z-10 font-bold w-50 p-3 bg-white dark:bg-gray-900"></td>
                                 <td>
                                     <div>
-                                        <div class="text-2xl font-bold mb-2 price" data-monthly="6" data-annual="5">
-                                            $6 <span class="text-sm text-gray-500 font-normal">/month</span>
+                                        <div class="text-2xl font-bold mb-2 price" data-monthly="5.99"
+                                            data-annual="4.99">
+                                            $5.99 <span class="text-sm text-gray-500 font-normal">/month</span>
                                         </div>
                                         <button
                                             class="bg-[#d87800] hover:bg-[#b35108] text-white py-2 rounded-full w-[150px] cursor-pointer">
@@ -799,31 +850,47 @@
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">API Requests
                                 </td>
-                                <td class="p-2 bg-white dark:bg-gray-900">100,000</td>
+                                <td class="p-2 bg-white dark:bg-gray-900">50,000
+                                    <span class="block text-xs text-[#7B7B7B] mt-1">$2.00 / 100k</span>
+                                </td>
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">DB Storage</td>
-                                <td class="p-2 bg-white dark:bg-gray-900">1 GB</td>
+                                <td class="p-2 bg-white dark:bg-gray-900">500 MB
+                                    <span class="block text-xs text-[#7B7B7B] mt-1">$0.50 / GB</span>
+                                </td>
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">File Storage
                                 </td>
-                                <td class="p-2 bg-white dark:bg-gray-900">1 GB</td>
+                                <td class="p-2 bg-white dark:bg-gray-900">1 GB
+                                    <span class="block text-xs text-[#7B7B7B] mt-1">$0.10 / GB</span>
+                                </td>
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">Data Transfer
+                                <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">Data transfer
                                 </td>
-                                <td class="p-2 bg-white dark:bg-gray-900">2 GB</td>
+                                <td class="p-2 bg-white dark:bg-gray-900">2 GB
+                                    <span class="block text-xs text-[#7B7B7B] mt-1">$0.35 / GB</span>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">Live Updates
+                                </td>
+                                <td class="p-2 bg-white dark:bg-gray-900">1 hr
+                                    <span class="block text-xs text-[#7B7B7B] mt-1">$0.60 / hr</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-200 dark:border-gray-700">
+                                <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">Release Distributions
+                                </td>
+                                <td class="p-2 bg-white dark:bg-gray-900">5 / month</td>
                             </tr>
                             <tr class="border-b border-gray-200 dark:border-gray-700">
                                 <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">Data Retention
                                 </td>
                                 <td class="p-2 bg-white dark:bg-gray-900">30 days</td>
-                            </tr>
-                            <tr class="border-b border-gray-200 dark:border-gray-700">
-                                <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">Release Distros
-                                </td>
-                                <td class="p-2 bg-white dark:bg-gray-900">5 / month</td>
                             </tr>
                             <tr>
                                 <td class="text-[#7B7B7B] bg-white dark:bg-gray-900">Support</td>
@@ -844,35 +911,23 @@
                     <a href="#/" class="flex items-center">
                         <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M46 23C46 35.7025 35.7025 46 23 46C10.2975 46 0 35.7025 0 23C0 10.2975 10.2975 0 23 0C35.7025 0 46 10.2975 46 23ZM7.51981 23C7.51981 31.5495 14.4505 38.4802 23 38.4802C31.5495 38.4802 38.4802 31.5495 38.4802 23C38.4802 14.4505 31.5495 7.51981 23 7.51981C14.4505 7.51981 7.51981 14.4505 7.51981 23Z"
-                                fill="#27A9E0" />
+                                d="M46 23.0004C46 35.6833 35.6829 46.0004 23 46.0004C20.9939 46.0004 18.9906 45.7363 17.0491 45.2193L18.9372 38.1614C20.2634 38.5155 21.6289 38.6953 23 38.6953C31.6538 38.6953 38.6949 31.6542 38.6949 23.0004C38.6949 22.7616 38.6893 22.5228 38.6752 22.284C39.535 22.888 40.5802 23.2392 41.6872 23.2392C42.1423 23.2392 42.6003 23.1802 43.0442 23.0594C44.2159 22.7476 45.2189 22.0564 45.9214 21.0898C45.9747 21.7248 46 22.3626 46 23.0004Z"
+                                fill="#26A7DF" />
                             <path
-                                d="M41.8443 26.8826C43.8781 27.3016 45.8995 25.988 45.9819 23.9131C46.1431 19.8547 45.2271 15.8017 43.2951 12.1784C40.7698 7.44234 36.6677 3.73861 31.6992 1.70858C26.7306 -0.321438 21.2086 -0.549908 16.0894 1.06274C12.1729 2.29651 8.68082 4.54847 5.95398 7.55865C4.55987 9.09763 5.08307 11.4509 6.82843 12.5759C8.57379 13.701 10.8759 13.1533 12.3877 11.7298C14.0746 10.1415 16.1085 8.94082 18.3488 8.23509C21.7943 7.14969 25.5109 7.30346 28.855 8.66977C32.1991 10.0361 34.96 12.5289 36.6597 15.7165C37.7648 17.7891 38.376 20.0705 38.468 22.3856C38.5505 24.4605 39.8105 26.4635 41.8443 26.8826Z"
-                                fill="#13CEBB" />
-                            <g filter="url(#filter0_d_26_24)">
-                                <path
-                                    d="M13.7743 6.11607C12.7785 4.29383 10.4694 3.6016 8.83353 4.88062C6.12525 6.99809 3.91296 9.70627 2.37687 12.8173C0.283005 17.0581 -0.452622 21.8412 0.270206 26.5152C0.993034 31.1891 3.13917 35.5266 6.41625 38.9367C8.82036 41.4384 11.7474 43.3518 14.9688 44.5523C16.9146 45.2774 18.9067 43.9199 19.3055 41.8821C19.7042 39.8442 18.3431 37.9085 16.4609 37.0313C14.7389 36.2287 13.1695 35.1115 11.8383 33.7262C9.63263 31.431 8.18817 28.5117 7.70167 25.3659C7.21517 22.2201 7.71028 19.0008 9.11957 16.1465C9.97014 14.4239 11.1287 12.8847 12.5279 11.5995C14.0571 10.1948 14.77 7.93831 13.7743 6.11607Z"
-                                    fill="#F6931D" />
-                            </g>
+                                d="M42.6339 21.5221C42.3164 21.6064 41.9989 21.6457 41.6871 21.6457C40.0743 21.6457 38.5964 20.5696 38.1609 18.9344C36.3318 12.0872 30.0971 7.30516 22.9999 7.30516C19.957 7.30516 17.0462 8.16492 14.5456 9.77205C14.5596 9.62314 14.5653 9.47141 14.5653 9.31969C14.5653 7.91766 14.0202 6.59993 13.0284 5.61092C12.1714 4.75397 11.07 4.22856 9.88153 4.10494C13.7027 1.43574 18.2431 0 22.9999 0C33.3985 0 42.5356 7.01014 45.2188 17.0491C45.7386 18.999 44.581 20.9995 42.6339 21.5221Z"
+                                fill="#40BEB2" />
                             <path
-                                d="M39.0964 33.5397C40.8337 34.6773 41.34 37.0341 39.9349 38.563C38.6341 39.9786 37.1575 41.2291 35.5375 42.2824C32.8635 44.0211 29.857 45.1846 26.7092 45.6989C23.5613 46.2133 20.3409 46.0674 17.2525 45.2703C15.3815 44.7874 13.5837 44.072 11.8999 43.1442C10.0812 42.142 9.81099 39.7466 11.0958 38.1153C12.3806 36.4839 14.7357 36.2533 16.6281 37.108C17.4338 37.4719 18.2712 37.767 19.1316 37.9891C21.2103 38.5255 23.3778 38.6238 25.4965 38.2776C27.6151 37.9314 29.6386 37.1483 31.4384 35.9781C32.1834 35.4937 32.8833 34.9473 33.5312 34.3459C35.0532 32.9332 37.3592 32.4022 39.0964 33.5397Z"
-                                fill="#27A9E0" />
+                                d="M12.9245 40.3356C12.6042 41.5353 12.7278 42.7519 13.197 43.8083C5.26252 40.0715 0 32.0077 0 22.9999C0 16.8579 2.39384 11.0812 6.7376 6.73748C8.16492 5.31016 10.4773 5.31016 11.9018 6.73748C13.3291 8.16198 13.3291 10.4772 11.9018 11.9017C8.93758 14.8659 7.30516 18.8078 7.30516 22.9999C7.30516 28.9452 10.6627 34.2835 15.7791 36.9359C14.4052 37.5765 13.3347 38.7987 12.9245 40.3356Z"
+                                fill="#F59220" />
                             <path
-                                d="M31.3895 14.8715C31.6432 14.0936 30.9064 13.3569 30.1286 13.6107L11.2809 19.7608C10.3285 20.0716 10.374 21.4342 11.345 21.6808L20.3179 23.959C20.6733 24.0493 20.9508 24.3267 21.0411 24.682L23.3209 33.6555C23.5676 34.6265 24.9301 34.6718 25.2408 33.7194L31.3895 14.8715Z"
+                                d="M23 45.9996C20.9939 45.9996 18.9906 45.7355 17.0491 45.2186C15.0992 44.6988 13.9416 42.6955 14.4642 40.7455C14.984 38.7956 16.9873 37.6409 18.9372 38.1606C20.2634 38.5147 21.6317 38.6945 23.0028 38.6945C25.0202 38.6945 26.6554 40.3297 26.6554 42.3471C26.6554 44.3644 25.0174 45.9996 23 45.9996Z"
+                                fill="#26A7DF" />
+                            <path
+                                d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
+                                fill="#070707" />
+                            <path
+                                d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
                                 fill="" class="fill-black dark:fill-white" />
-                            <defs>
-                                <filter id="filter0_d_26_24" x="0" y="4.22595" width="19.3752" height="40.5238"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feOffset />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_26_24" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_24"
-                                        result="shape" />
-                                </filter>
-                            </defs>
                         </svg>
 
                         <span
