@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Services</title>
+    <link rel="icon" href="assets/logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: "class" }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto px-4 py-3">
+            <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M46 23.0004C46 35.6833 35.6829 46.0004 23 46.0004C20.9939 46.0004 18.9906 45.7363 17.0491 45.2193L18.9372 38.1614C20.2634 38.5155 21.6289 38.6953 23 38.6953C31.6538 38.6953 38.6949 31.6542 38.6949 23.0004C38.6949 22.7616 38.6893 22.5228 38.6752 22.284C39.535 22.888 40.5802 23.2392 41.6872 23.2392C42.1423 23.2392 42.6003 23.1802 43.0442 23.0594C44.2159 22.7476 45.2189 22.0564 45.9214 21.0898C45.9747 21.7248 46 22.3626 46 23.0004Z"
+                        fill="#26A7DF" />
+                    <path
+                        d="M42.6339 21.5221C42.3164 21.6064 41.9989 21.6457 41.6871 21.6457C40.0743 21.6457 38.5964 20.5696 38.1609 18.9344C36.3318 12.0872 30.0971 7.30516 22.9999 7.30516C19.957 7.30516 17.0462 8.16492 14.5456 9.77205C14.5596 9.62314 14.5653 9.47141 14.5653 9.31969C14.5653 7.91766 14.0202 6.59993 13.0284 5.61092C12.1714 4.75397 11.07 4.22856 9.88153 4.10494C13.7027 1.43574 18.2431 0 22.9999 0C33.3985 0 42.5356 7.01014 45.2188 17.0491C45.7386 18.999 44.581 20.9995 42.6339 21.5221Z"
+                        fill="#40BEB2" />
+                    <path
+                        d="M12.9245 40.3356C12.6042 41.5353 12.7278 42.7519 13.197 43.8083C5.26252 40.0715 0 32.0077 0 22.9999C0 16.8579 2.39384 11.0812 6.7376 6.73748C8.16492 5.31016 10.4773 5.31016 11.9018 6.73748C13.3291 8.16198 13.3291 10.4772 11.9018 11.9017C8.93758 14.8659 7.30516 18.8078 7.30516 22.9999C7.30516 28.9452 10.6627 34.2835 15.7791 36.9359C14.4052 37.5765 13.3347 38.7987 12.9245 40.3356Z"
+                        fill="#F59220" />
+                    <path
+                        d="M23 45.9996C20.9939 45.9996 18.9906 45.7355 17.0491 45.2186C15.0992 44.6988 13.9416 42.6955 14.4642 40.7455C14.984 38.7956 16.9873 37.6409 18.9372 38.1606C20.2634 38.5147 21.6317 38.6945 23.0028 38.6945C25.0202 38.6945 26.6554 40.3297 26.6554 42.3471C26.6554 44.3644 25.0174 45.9996 23 45.9996Z"
+                        fill="#26A7DF" />
+                    <path
+                        d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
+                        fill="#070707" />
+                    <path
+                        d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
+                        fill="" class="fill-black dark:fill-white" />
+                </svg>
+                <span
+                    class="self-center text-sm md:text-xl font-bold whitespace-nowrap text-gray-900 dark:text-white">AppAmbit</span>
+            </a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" type="button"
+                class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                <!-- Moon icon -->
+
+                <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        fill="#D87800" />
+                </svg>
+
+
+                <!-- Sun icon -->
+                <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z"
+                        fill="#D87800" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V3C12.75 3.41421 12.4142 3.75 12 3.75C11.5858 3.75 11.25 3.41421 11.25 3V2C11.25 1.58579 11.5858 1.25 12 1.25ZM4.39861 4.39861C4.6915 4.10572 5.16638 4.10572 5.45927 4.39861L5.85211 4.79145C6.145 5.08434 6.145 5.55921 5.85211 5.85211C5.55921 6.145 5.08434 6.145 4.79145 5.85211L4.39861 5.45927C4.10572 5.16638 4.10572 4.6915 4.39861 4.39861ZM19.6011 4.39887C19.894 4.69176 19.894 5.16664 19.6011 5.45953L19.2083 5.85237C18.9154 6.14526 18.4405 6.14526 18.1476 5.85237C17.8547 5.55947 17.8547 5.0846 18.1476 4.79171L18.5405 4.39887C18.8334 4.10598 19.3082 4.10598 19.6011 4.39887ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H3C3.41421 11.25 3.75 11.5858 3.75 12C3.75 12.4142 3.41421 12.75 3 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM20.25 12C20.25 11.5858 20.5858 11.25 21 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H21C20.5858 12.75 20.25 12.4142 20.25 12ZM18.1476 18.1476C18.4405 17.8547 18.9154 17.8547 19.2083 18.1476L19.6011 18.5405C19.894 18.8334 19.894 19.3082 19.6011 19.6011C19.3082 19.894 18.8334 19.894 18.5405 19.6011L18.1476 19.2083C17.8547 18.9154 17.8547 18.4405 18.1476 18.1476ZM5.85211 18.1479C6.145 18.4408 6.145 18.9157 5.85211 19.2086L5.45927 19.6014C5.16638 19.8943 4.6915 19.8943 4.39861 19.6014C4.10572 19.3085 4.10572 18.8336 4.39861 18.5407L4.79145 18.1479C5.08434 17.855 5.55921 17.855 5.85211 18.1479ZM12 20.25C12.4142 20.25 12.75 20.5858 12.75 21V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V21C11.25 20.5858 11.5858 20.25 12 20.25Z"
+                        fill="#D87800" />
+                </svg>
+
+            </button>
+        </div>
+    </nav>
+
+    <!-- Terms of Services Section -->
+    <section class="relative py-16 px-4 md:px-6 lg:px-8 text-gray-800 dark:text-gray-100">
+        <div class="max-w-3xl mx-auto">
+            <div class="flex flex-col gap-12">
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">Terms of Service</h1>
+                    <p class="text-gray-600 text-sm font-medium dark:text-gray-400">AppAmbit Inc.</p>
+                    <p class="text-gray-500 text-sm mb-6 dark:text-gray-400">Effective Date: August 25, 2025</p>
+                    <p class="mt-4">
+                        Welcome to AppAmbit. These Terms of Service (“Terms”) govern your use of the websites, SDKs, and
+                        hosted services
+                        provided by <strong>AppAmbit Inc.</strong> (“AppAmbit,” “we,” “our,” or “us”).
+                    </p>
+                    <p class="mt-2">
+                        By accessing or using our services, you agree to these Terms. If you do not agree, you must not
+                        use AppAmbit.
+                    </p>
+                </div>
+
+                <div class="space-y-10">
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">1. Eligibility</h2>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>You may use AppAmbit if you are legally permitted to do so in your country of residence.
+                            </li>
+                            <li>If you are under the age of majority in your jurisdiction, you may use AppAmbit with the
+                                consent of a parent or legal guardian.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">2. Account Registration</h2>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>You must provide accurate information when creating an account.</li>
+                            <li>You are responsible for maintaining the confidentiality of your login credentials.</li>
+                            <li>You are responsible for all activity occurring under your account.</li>
+                            <li>Notify us immediately at <a href="mailto:hello@appambit.com"
+                                    class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a> if you suspect
+                                unauthorized use of your account.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">3. Services</h2>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>AppAmbit provides an open source SDK and hosted services, including build distribution,
+                                telemetry, and analytics.</li>
+                            <li>Some features may be free during beta. Paid plans may be introduced later and will be
+                                clearly disclosed before you are charged.</li>
+                            <li>We may modify, suspend, or discontinue any aspect of the services.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">4. Acceptable Use</h2>
+                        <p>You agree not to:</p>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>Use the services for unlawful, harmful, or abusive purposes.</li>
+                            <li>Reverse engineer or copy the services, except where open source licensing expressly
+                                allows.</li>
+                            <li>Attempt to gain unauthorized access to AppAmbit systems or data.</li>
+                            <li>Interfere with or disrupt service operation or security.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">5. Intellectual Property</h2>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>AppAmbit retains ownership of all rights, titles, and interests in its services,
+                                software, and trademarks.</li>
+                            <li>You retain ownership of the applications, code, and content you upload or deliver
+                                through the services.</li>
+                            <li>By using the services, you grant AppAmbit a license to process, store, and transmit your
+                                data solely to provide the services.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">6. Subscriptions & Payments</h2>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>If paid subscriptions are offered, the fees, billing cycles, and renewal terms will be
+                                provided at the time of purchase.</li>
+                            <li>Subscriptions automatically renew unless canceled before the renewal date.</li>
+                            <li>Payments are processed by third-party providers; AppAmbit does not store payment card
+                                details.</li>
+                            <li>Fees are non-refundable except where required by law.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">7. Privacy</h2>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>AppAmbit collects and processes data in accordance with our <a href="#"
+                                    class="text-[#d87800] hover:underline dark:[#d87800]">Privacy Policy</a>.</li>
+                            <li>We do <strong>not</strong> sell user data to third parties.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">8. Service Availability</h2>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>We strive to maintain reliable services but cannot guarantee uninterrupted or error-free
+                                operation.</li>
+                            <li>Outages or maintenance may occur.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">9. Disclaimers</h2>
+                        <p>
+                            The services are provided “as is” without warranties of any kind. To the fullest extent
+                            permitted by law,
+                            AppAmbit disclaims all implied warranties, including merchantability, fitness for a
+                            particular purpose,
+                            and non-infringement.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">10. Limitation of Liability</h2>
+                        <p>To the maximum extent permitted by law:</p>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>AppAmbit shall not be liable for indirect, incidental, or consequential damages.</li>
+                            <li>Our total liability shall not exceed the greater of $100 or the amount you paid in the
+                                past 12 months.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">11. Indemnification</h2>
+                        <p>
+                            You agree to indemnify and hold harmless AppAmbit from claims, damages, liabilities, or
+                            expenses arising
+                            from your use of the services or violation of these Terms.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">12. Modifications</h2>
+                        <p>
+                            We may revise these Terms from time to time. Continued use of the services after changes are
+                            posted
+                            constitutes acceptance of the updated Terms.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">13. Governing Law</h2>
+                        <p>
+                            These Terms are governed by the laws of the State of [Insert State of Incorporation],
+                            without regard
+                            to conflict of law principles.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">14. Contact</h2>
+                        <p>
+                            For questions about these Terms, email us at
+                            <a href="mailto:hello@appambit.com"
+                                class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="text-center sm:items-center sm:justify-between flex">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#"
+                    class="hover:underline">AppAmbit™</a>. All
+                Rights Reserved.
+            </span>
+            <ul class="text-gray-500 dark:text-gray-400 text-base font-normal flex gap-10">
+                <li class="">
+                    <a href="Soon.html" class="hover:underline">Home</a>
+                </li>
+                <li class="">
+                    <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Terms of Services</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
