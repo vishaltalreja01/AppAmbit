@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link rel="icon" href="assets/logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: "class" }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto px-4 py-3">
+            <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M46 23.0004C46 35.6833 35.6829 46.0004 23 46.0004C20.9939 46.0004 18.9906 45.7363 17.0491 45.2193L18.9372 38.1614C20.2634 38.5155 21.6289 38.6953 23 38.6953C31.6538 38.6953 38.6949 31.6542 38.6949 23.0004C38.6949 22.7616 38.6893 22.5228 38.6752 22.284C39.535 22.888 40.5802 23.2392 41.6872 23.2392C42.1423 23.2392 42.6003 23.1802 43.0442 23.0594C44.2159 22.7476 45.2189 22.0564 45.9214 21.0898C45.9747 21.7248 46 22.3626 46 23.0004Z"
+                        fill="#26A7DF" />
+                    <path
+                        d="M42.6339 21.5221C42.3164 21.6064 41.9989 21.6457 41.6871 21.6457C40.0743 21.6457 38.5964 20.5696 38.1609 18.9344C36.3318 12.0872 30.0971 7.30516 22.9999 7.30516C19.957 7.30516 17.0462 8.16492 14.5456 9.77205C14.5596 9.62314 14.5653 9.47141 14.5653 9.31969C14.5653 7.91766 14.0202 6.59993 13.0284 5.61092C12.1714 4.75397 11.07 4.22856 9.88153 4.10494C13.7027 1.43574 18.2431 0 22.9999 0C33.3985 0 42.5356 7.01014 45.2188 17.0491C45.7386 18.999 44.581 20.9995 42.6339 21.5221Z"
+                        fill="#40BEB2" />
+                    <path
+                        d="M12.9245 40.3356C12.6042 41.5353 12.7278 42.7519 13.197 43.8083C5.26252 40.0715 0 32.0077 0 22.9999C0 16.8579 2.39384 11.0812 6.7376 6.73748C8.16492 5.31016 10.4773 5.31016 11.9018 6.73748C13.3291 8.16198 13.3291 10.4772 11.9018 11.9017C8.93758 14.8659 7.30516 18.8078 7.30516 22.9999C7.30516 28.9452 10.6627 34.2835 15.7791 36.9359C14.4052 37.5765 13.3347 38.7987 12.9245 40.3356Z"
+                        fill="#F59220" />
+                    <path
+                        d="M23 45.9996C20.9939 45.9996 18.9906 45.7355 17.0491 45.2186C15.0992 44.6988 13.9416 42.6955 14.4642 40.7455C14.984 38.7956 16.9873 37.6409 18.9372 38.1606C20.2634 38.5147 21.6317 38.6945 23.0028 38.6945C25.0202 38.6945 26.6554 40.3297 26.6554 42.3471C26.6554 44.3644 25.0174 45.9996 23 45.9996Z"
+                        fill="#26A7DF" />
+                    <path
+                        d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
+                        fill="#070707" />
+                    <path
+                        d="M31.4915 15.1233C31.7471 14.3395 31.0031 13.5954 30.2193 13.851L11.2094 20.0532C10.2496 20.3656 10.295 21.7401 11.2748 21.99L20.3253 24.2874C20.6831 24.3783 20.9643 24.6594 21.0551 25.0172L23.3554 34.0678C23.6053 35.0475 24.9769 35.093 25.2922 34.1331L31.4915 15.1233Z"
+                        fill="" class="fill-black dark:fill-white" />
+                </svg>
+                <span
+                    class="self-center text-sm md:text-xl font-bold whitespace-nowrap text-gray-900 dark:text-white">AppAmbit</span>
+            </a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" type="button"
+                class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                <!-- Moon icon -->
+
+                <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        fill="#D87800" />
+                </svg>
+
+
+                <!-- Sun icon -->
+                <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z"
+                        fill="#D87800" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V3C12.75 3.41421 12.4142 3.75 12 3.75C11.5858 3.75 11.25 3.41421 11.25 3V2C11.25 1.58579 11.5858 1.25 12 1.25ZM4.39861 4.39861C4.6915 4.10572 5.16638 4.10572 5.45927 4.39861L5.85211 4.79145C6.145 5.08434 6.145 5.55921 5.85211 5.85211C5.55921 6.145 5.08434 6.145 4.79145 5.85211L4.39861 5.45927C4.10572 5.16638 4.10572 4.6915 4.39861 4.39861ZM19.6011 4.39887C19.894 4.69176 19.894 5.16664 19.6011 5.45953L19.2083 5.85237C18.9154 6.14526 18.4405 6.14526 18.1476 5.85237C17.8547 5.55947 17.8547 5.0846 18.1476 4.79171L18.5405 4.39887C18.8334 4.10598 19.3082 4.10598 19.6011 4.39887ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H3C3.41421 11.25 3.75 11.5858 3.75 12C3.75 12.4142 3.41421 12.75 3 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM20.25 12C20.25 11.5858 20.5858 11.25 21 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H21C20.5858 12.75 20.25 12.4142 20.25 12ZM18.1476 18.1476C18.4405 17.8547 18.9154 17.8547 19.2083 18.1476L19.6011 18.5405C19.894 18.8334 19.894 19.3082 19.6011 19.6011C19.3082 19.894 18.8334 19.894 18.5405 19.6011L18.1476 19.2083C17.8547 18.9154 17.8547 18.4405 18.1476 18.1476ZM5.85211 18.1479C6.145 18.4408 6.145 18.9157 5.85211 19.2086L5.45927 19.6014C5.16638 19.8943 4.6915 19.8943 4.39861 19.6014C4.10572 19.3085 4.10572 18.8336 4.39861 18.5407L4.79145 18.1479C5.08434 17.855 5.55921 17.855 5.85211 18.1479ZM12 20.25C12.4142 20.25 12.75 20.5858 12.75 21V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V21C11.25 20.5858 11.5858 20.25 12 20.25Z"
+                        fill="#D87800" />
+                </svg>
+
+            </button>
+        </div>
+    </nav>
+
+    <!-- Privacy Policy Section -->
+    <section class="relative py-16 px-4 md:px-6 lg:px-8 text-gray-800 dark:text-gray-100">
+        <div class="max-w-3xl mx-auto">
+            <div class="flex flex-col gap-12">
+                <div class="">
+                    <h1 class="text-5xl font-bold mb-6">Privacy Policy</h1>
+                    <p class="text-gray-600 text-sm font-medium dark:text-gray-400">AppAmbit Inc.</p>
+                    <p class="text-gray-500 text-sm mb-6 dark:text-gray-400">Effective Date: August 25, 2025</p>
+                    <p class="mt-5">
+                        At <strong>AppAmbit Inc.</strong> (“AppAmbit,” “we,” “our,” or “us”), we respect your
+                        privacy. This Privacy Policy explains how we collect, use, and protect your information when
+                        you use our websites, SDKs, and hosted services.
+                    </p>
+                </div>
+
+                <div class="space-y-10">
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">1. Information We Collect</h2>
+                        <ul class="list-disc list-inside space-y-1 ml-5">
+                            <li><strong>Account Information:</strong> Name, email address, and credentials you provide.
+                            </li>
+                            <li><strong>Usage Data:</strong> Logs, events, crashes, and telemetry submitted via the SDK.
+                            </li>
+                            <li><strong>Technical Data:</strong> Device type, operating system, IP address, browser, and
+                                connection details.</li>
+                            <li><strong>Payment Data:</strong> If you subscribe, billing information is collected by our
+                                payment providers (we do not store payment card details).</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">2. How We Use Information</h2>
+                        <p>We use data to:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-5">
+                            <li>Provide, operate, and improve AppAmbit services.</li>
+                            <li>Authenticate accounts and secure access.</li>
+                            <li>Communicate service updates and product notifications.</li>
+                            <li>Analyze usage to improve reliability and performance.</li>
+                            <li>Comply with applicable legal obligations.</li>
+                        </ul>
+                        <p class="mt-2">We do <strong>not</strong> sell, rent, or trade your personal information.</strong></p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">3. Data Sharing</h2>
+                        <p>We may share information with:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-5">
+                            <li><strong>Service Providers</strong> (e.g., hosting, analytics, payment processing) under
+                                confidentiality obligations.</li>
+                            <li><strong>Legal Authorities</strong> when required by law or legal process.</li>
+                            <li><strong>Business Transfers</strong> in the event of a merger, acquisition, or sale of
+                                assets.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">4. Data Retention</h2>
+                        <ul class="list-disc list-inside space-y-1 ml-5">
+                            <li>We retain personal data only as long as necessary to provide services or comply with legal obligations.</li>
+                            <li>Users may request deletion of their account and associated data by contacting <a
+                                    href="mailto:hello@appambit.com"
+                                    class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">5. Security</h2>
+                        <p>We employ administrative, technical, and physical safeguards to protect data. However, no
+                            system is completely secure. Users should protect their login credentials.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">6. Children’s Privacy</h2>
+                        <ul class="list-disc list-inside space-y-1 ml-5">
+                            <li>AppAmbit is not directed at children under 13.</li>
+                            <li>If you are under the age of majority in your jurisdiction, you may only use AppAmbit with
+                            parental or guardian consent.</li>
+                            <li>If we become aware of data collected from a child without consent, we will delete it.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">7. Your Rights</h2>
+                        <p>Depending on your location (e.g., GDPR, CCPA), you may have rights to:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-5">
+                            <li>Access, correct, or delete your personal data.</li>
+                            <li>Request a copy of your data (data portability).</li>
+                            <li>Object to or restrict certain processing.</li>
+                            <li>File a complaint with a supervisory authority.</li>
+                        </ul>
+                        <p class="mt-2">To exercise your rights, contact <a href="mailto:hello@appambit.com"
+                                class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">8. International Users</h2>
+                        <p>If you access AppAmbit from outside the United States, your data may be transferred to and
+                            processed in the United States or other jurisdictions where we operate.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">9. Third-Party Links</h2>
+                        <p>AppAmbit may link to external websites or services. We are not responsible for their privacy
+                            practices.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">10. Changes to This Policy</h2>
+                        <p>We may update this Privacy Policy occasionally. Significant changes will be communicated via
+                            email or posted on our site.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">11. Contact</h2>
+                        <p>For privacy questions or requests, contact us at <a href="mailto:hello@appambit.com"
+                                class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="text-center sm:items-center sm:justify-between flex">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#"
+                    class="hover:underline">AppAmbit™</a>. All
+                Rights Reserved.
+            </span>
+            <ul class="text-gray-500 dark:text-gray-400 text-base font-normal flex gap-10">
+                <li class="">
+                    <a href="Soon.html" class="hover:underline">Home</a>
+                </li>
+                <li class="">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="terms-of-services.html" class="hover:underline">Terms of Services</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
