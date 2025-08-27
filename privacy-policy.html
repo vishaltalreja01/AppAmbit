@@ -12,12 +12,12 @@
     </script>
 </head>
 
-<body class="bg-white dark:bg-gray-900">
+<body class="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
     <!-- Navbar -->
     <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0">
         <div class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto px-4 py-3">
-            <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="Soon.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+                <svg width="40" height="40" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M46 23.0004C46 35.6833 35.6829 46.0004 23 46.0004C20.9939 46.0004 18.9906 45.7363 17.0491 45.2193L18.9372 38.1614C20.2634 38.5155 21.6289 38.6953 23 38.6953C31.6538 38.6953 38.6949 31.6542 38.6949 23.0004C38.6949 22.7616 38.6893 22.5228 38.6752 22.284C39.535 22.888 40.5802 23.2392 41.6872 23.2392C42.1423 23.2392 42.6003 23.1802 43.0442 23.0594C44.2159 22.7476 45.2189 22.0564 45.9214 21.0898C45.9747 21.7248 46 22.3626 46 23.0004Z"
                         fill="#26A7DF" />
@@ -68,151 +68,150 @@
         </div>
     </nav>
 
-    <!-- Privacy Policy Section -->
-    <section class="relative py-16 px-4 md:px-6 lg:px-8 text-gray-800 dark:text-gray-100">
-        <div class="max-w-3xl mx-auto">
-            <div class="flex flex-col gap-12">
-                <div class="">
-                    <h1 class="text-5xl font-bold mb-6">Privacy Policy</h1>
-                    <p class="text-gray-600 text-sm font-medium dark:text-gray-400">AppAmbit Inc.</p>
-                    <p class="text-gray-500 text-sm mb-6 dark:text-gray-400">Effective Date: August 25, 2025</p>
-                    <p class="mt-5">
-                        At <strong>AppAmbit Inc.</strong> (“AppAmbit,” “we,” “our,” or “us”), we respect your
-                        privacy. This Privacy Policy explains how we collect, use, and protect your information when
-                        you use our websites, SDKs, and hosted services.
-                    </p>
-                </div>
-
-                <div class="space-y-10">
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">1. Information We Collect</h2>
-                        <ul class="list-disc list-inside space-y-1 ml-5">
-                            <li><strong>Account Information:</strong> Name, email address, and credentials you provide.
-                            </li>
-                            <li><strong>Usage Data:</strong> Logs, events, crashes, and telemetry submitted via the SDK.
-                            </li>
-                            <li><strong>Technical Data:</strong> Device type, operating system, IP address, browser, and
-                                connection details.</li>
-                            <li><strong>Payment Data:</strong> If you subscribe, billing information is collected by our
-                                payment providers (we do not store payment card details).</li>
-                        </ul>
+    <main class="flex-grow">
+        <!-- Privacy Policy Section -->
+        <section class="relative py-16 px-4 md:px-6 lg:px-8 text-gray-800 dark:text-gray-100">
+            <div class="max-w-3xl mx-auto">
+                <div class="flex flex-col gap-12">
+                    <div class="">
+                        <h1 class="text-5xl font-bold mb-6">Privacy Policy</h1>
+                        <p class="text-gray-600 text-sm font-medium dark:text-gray-400">AppAmbit Inc.</p>
+                        <p class="text-gray-500 text-sm mb-6 dark:text-gray-400">Effective Date: August 25, 2025</p>
+                        <p class="mt-5">
+                            At <strong>AppAmbit Inc.</strong> (“AppAmbit,” “we,” “our,” or “us”), we respect your
+                            privacy. This Privacy Policy explains how we collect, use, and protect your information when
+                            you use our websites, SDKs, and hosted services.
+                        </p>
                     </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">2. How We Use Information</h2>
-                        <p>We use data to:</p>
-                        <ul class="list-disc list-inside space-y-1 ml-5">
-                            <li>Provide, operate, and improve AppAmbit services.</li>
-                            <li>Authenticate accounts and secure access.</li>
-                            <li>Communicate service updates and product notifications.</li>
-                            <li>Analyze usage to improve reliability and performance.</li>
-                            <li>Comply with applicable legal obligations.</li>
-                        </ul>
-                        <p class="mt-2">We do <strong>not</strong> sell, rent, or trade your personal information.</strong></p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">3. Data Sharing</h2>
-                        <p>We may share information with:</p>
-                        <ul class="list-disc list-inside space-y-1 ml-5">
-                            <li><strong>Service Providers</strong> (e.g., hosting, analytics, payment processing) under
-                                confidentiality obligations.</li>
-                            <li><strong>Legal Authorities</strong> when required by law or legal process.</li>
-                            <li><strong>Business Transfers</strong> in the event of a merger, acquisition, or sale of
-                                assets.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">4. Data Retention</h2>
-                        <ul class="list-disc list-inside space-y-1 ml-5">
-                            <li>We retain personal data only as long as necessary to provide services or comply with legal obligations.</li>
-                            <li>Users may request deletion of their account and associated data by contacting <a
-                                    href="mailto:hello@appambit.com"
-                                    class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">5. Security</h2>
-                        <p>We employ administrative, technical, and physical safeguards to protect data. However, no
-                            system is completely secure. Users should protect their login credentials.</p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">6. Children’s Privacy</h2>
-                        <ul class="list-disc list-inside space-y-1 ml-5">
-                            <li>AppAmbit is not directed at children under 13.</li>
-                            <li>If you are under the age of majority in your jurisdiction, you may only use AppAmbit with
-                            parental or guardian consent.</li>
-                            <li>If we become aware of data collected from a child without consent, we will delete it.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">7. Your Rights</h2>
-                        <p>Depending on your location (e.g., GDPR, CCPA), you may have rights to:</p>
-                        <ul class="list-disc list-inside space-y-1 ml-5">
-                            <li>Access, correct, or delete your personal data.</li>
-                            <li>Request a copy of your data (data portability).</li>
-                            <li>Object to or restrict certain processing.</li>
-                            <li>File a complaint with a supervisory authority.</li>
-                        </ul>
-                        <p class="mt-2">To exercise your rights, contact <a href="mailto:hello@appambit.com"
-                                class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">8. International Users</h2>
-                        <p>If you access AppAmbit from outside the United States, your data may be transferred to and
-                            processed in the United States or other jurisdictions where we operate.</p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">9. Third-Party Links</h2>
-                        <p>AppAmbit may link to external websites or services. We are not responsible for their privacy
-                            practices.</p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">10. Changes to This Policy</h2>
-                        <p>We may update this Privacy Policy occasionally. Significant changes will be communicated via
-                            email or posted on our site.</p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">11. Contact</h2>
-                        <p>For privacy questions or requests, contact us at <a href="mailto:hello@appambit.com"
-                                class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</p>
+    
+                    <div class="space-y-10">
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">1. Information We Collect</h2>
+                            <ul class="list-disc list-inside space-y-1 ml-5">
+                                <li><strong>Account Information:</strong> Name, email address, and credentials you provide.
+                                </li>
+                                <li><strong>Usage Data:</strong> Logs, events, crashes, and telemetry submitted via the SDK.
+                                </li>
+                                <li><strong>Technical Data:</strong> Device type, operating system, IP address, browser, and
+                                    connection details.</li>
+                                <li><strong>Payment Data:</strong> If you subscribe, billing information is collected by our
+                                    payment providers (we do not store payment card details).</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">2. How We Use Information</h2>
+                            <p>We use data to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-5">
+                                <li>Provide, operate, and improve AppAmbit services.</li>
+                                <li>Authenticate accounts and secure access.</li>
+                                <li>Communicate service updates and product notifications.</li>
+                                <li>Analyze usage to improve reliability and performance.</li>
+                                <li>Comply with applicable legal obligations.</li>
+                            </ul>
+                            <p class="mt-2">We do <strong>not</strong> sell, rent, or trade your personal
+                                information.</strong></p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">3. Data Sharing</h2>
+                            <p>We may share information with:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-5">
+                                <li><strong>Service Providers</strong> (e.g., hosting, analytics, payment processing) under
+                                    confidentiality obligations.</li>
+                                <li><strong>Legal Authorities</strong> when required by law or legal process.</li>
+                                <li><strong>Business Transfers</strong> in the event of a merger, acquisition, or sale of
+                                    assets.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">4. Data Retention</h2>
+                            <ul class="list-disc list-inside space-y-1 ml-5">
+                                <li>We retain personal data only as long as necessary to provide services or comply with
+                                    legal obligations.</li>
+                                <li>Users may request deletion of their account and associated data by contacting <a
+                                        href="mailto:hello@appambit.com"
+                                        class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">5. Security</h2>
+                            <p>We employ administrative, technical, and physical safeguards to protect data. However, no
+                                system is completely secure. Users should protect their login credentials.</p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">6. Children’s Privacy</h2>
+                            <ul class="list-disc list-inside space-y-1 ml-5">
+                                <li>AppAmbit is not directed at children under 13.</li>
+                                <li>If you are under the age of majority in your jurisdiction, you may only use AppAmbit
+                                    with
+                                    parental or guardian consent.</li>
+                                <li>If we become aware of data collected from a child without consent, we will delete it.
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">7. Your Rights</h2>
+                            <p>Depending on your location (e.g., GDPR, CCPA), you may have rights to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-5">
+                                <li>Access, correct, or delete your personal data.</li>
+                                <li>Request a copy of your data (data portability).</li>
+                                <li>Object to or restrict certain processing.</li>
+                                <li>File a complaint with a supervisory authority.</li>
+                            </ul>
+                            <p class="mt-2">To exercise your rights, contact <a href="mailto:hello@appambit.com"
+                                    class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">8. International Users</h2>
+                            <p>If you access AppAmbit from outside the United States, your data may be transferred to and
+                                processed in the United States or other jurisdictions where we operate.</p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">9. Third-Party Links</h2>
+                            <p>AppAmbit may link to external websites or services. We are not responsible for their privacy
+                                practices.</p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">10. Changes to This Policy</h2>
+                            <p>We may update this Privacy Policy occasionally. Significant changes will be communicated via
+                                email or posted on our site.</p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">11. Contact</h2>
+                            <p>For privacy questions or requests, contact us at <a href="mailto:hello@appambit.com"
+                                    class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
+        </section>
+    </main>
 
 
     <!-- Footer -->
-    <footer class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="text-center sm:items-center sm:justify-between flex">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#"
-                    class="hover:underline">AppAmbit™</a>. All
-                Rights Reserved.
+    <footer class="w-full max-w-screen-xl mx-auto px-4 py-6 lg:py-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+                © 2025 <a href="Soon.html" class="hover:underline">AppAmbit™</a>. All Rights Reserved.
             </span>
-            <ul class="text-gray-500 dark:text-gray-400 text-base font-normal flex gap-10">
-                <li class="">
-                    <a href="Soon.html" class="hover:underline">Home</a>
-                </li>
-                <li class="">
+            <ul class="flex gap-6 mt-4 sm:mt-0 text-sm text-gray-500 dark:text-gray-400">
+                <li>
                     <a href="#" class="hover:underline">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="terms-of-services.html" class="hover:underline">Terms of Services</a>
+                    <a href="terms-of-services.html" class="hover:underline">Terms of Service</a>
                 </li>
             </ul>
-        </div>
-        <div>
         </div>
     </footer>
     <script src="script.js"></script>

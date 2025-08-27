@@ -12,12 +12,12 @@
     </script>
 </head>
 
-<body class="bg-white dark:bg-gray-900">
+<body class="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
     <!-- Navbar -->
     <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0">
         <div class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto px-4 py-3">
-            <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="Soon.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+                <svg width="40" height="40" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M46 23.0004C46 35.6833 35.6829 46.0004 23 46.0004C20.9939 46.0004 18.9906 45.7363 17.0491 45.2193L18.9372 38.1614C20.2634 38.5155 21.6289 38.6953 23 38.6953C31.6538 38.6953 38.6949 31.6542 38.6949 23.0004C38.6949 22.7616 38.6893 22.5228 38.6752 22.284C39.535 22.888 40.5802 23.2392 41.6872 23.2392C42.1423 23.2392 42.6003 23.1802 43.0442 23.0594C44.2159 22.7476 45.2189 22.0564 45.9214 21.0898C45.9747 21.7248 46 22.3626 46 23.0004Z"
                         fill="#26A7DF" />
@@ -68,200 +68,196 @@
         </div>
     </nav>
 
-    <!-- Terms of Services Section -->
-    <section class="relative py-16 px-4 md:px-6 lg:px-8 text-gray-800 dark:text-gray-100">
-        <div class="max-w-3xl mx-auto">
-            <div class="flex flex-col gap-12">
-                <div>
-                    <h1 class="text-5xl font-bold mb-6">Terms of Service</h1>
-                    <p class="text-gray-600 text-sm font-medium dark:text-gray-400">AppAmbit Inc.</p>
-                    <p class="text-gray-500 text-sm mb-6 dark:text-gray-400">Effective Date: August 25, 2025</p>
-                    <p class="mt-4">
-                        Welcome to AppAmbit. These Terms of Service (“Terms”) govern your use of the websites, SDKs, and
-                        hosted services
-                        provided by <strong>AppAmbit Inc.</strong> (“AppAmbit,” “we,” “our,” or “us”).
-                    </p>
-                    <p class="mt-2">
-                        By accessing or using our services, you agree to these Terms. If you do not agree, you must not
-                        use AppAmbit.
-                    </p>
-                </div>
-
-                <div class="space-y-10">
+    <main class="flex-grow">
+        <!-- Terms of Services Section -->
+        <section class="relative py-16 px-4 md:px-6 lg:px-8 text-gray-800 dark:text-gray-100">
+            <div class="max-w-3xl mx-auto">
+                <div class="flex flex-col gap-12">
                     <div>
-                        <h2 class="text-xl font-bold mb-2">1. Eligibility</h2>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>You may use AppAmbit if you are legally permitted to do so in your country of residence.
-                            </li>
-                            <li>If you are under the age of majority in your jurisdiction, you may use AppAmbit with the
-                                consent of a parent or legal guardian.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">2. Account Registration</h2>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>You must provide accurate information when creating an account.</li>
-                            <li>You are responsible for maintaining the confidentiality of your login credentials.</li>
-                            <li>You are responsible for all activity occurring under your account.</li>
-                            <li>Notify us immediately at <a href="mailto:hello@appambit.com"
-                                    class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a> if you suspect
-                                unauthorized use of your account.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">3. Services</h2>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>AppAmbit provides an open source SDK and hosted services, including build distribution,
-                                telemetry, and analytics.</li>
-                            <li>Some features may be free during beta. Paid plans may be introduced later and will be
-                                clearly disclosed before you are charged.</li>
-                            <li>We may modify, suspend, or discontinue any aspect of the services.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">4. Acceptable Use</h2>
-                        <p>You agree not to:</p>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>Use the services for unlawful, harmful, or abusive purposes.</li>
-                            <li>Reverse engineer or copy the services, except where open source licensing expressly
-                                allows.</li>
-                            <li>Attempt to gain unauthorized access to AppAmbit systems or data.</li>
-                            <li>Interfere with or disrupt service operation or security.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">5. Intellectual Property</h2>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>AppAmbit retains ownership of all rights, titles, and interests in its services,
-                                software, and trademarks.</li>
-                            <li>You retain ownership of the applications, code, and content you upload or deliver
-                                through the services.</li>
-                            <li>By using the services, you grant AppAmbit a license to process, store, and transmit your
-                                data solely to provide the services.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">6. Subscriptions & Payments</h2>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>If paid subscriptions are offered, the fees, billing cycles, and renewal terms will be
-                                provided at the time of purchase.</li>
-                            <li>Subscriptions automatically renew unless canceled before the renewal date.</li>
-                            <li>Payments are processed by third-party providers; AppAmbit does not store payment card
-                                details.</li>
-                            <li>Fees are non-refundable except where required by law.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">7. Privacy</h2>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>AppAmbit collects and processes data in accordance with our <a href="#"
-                                    class="text-[#d87800] hover:underline dark:[#d87800]">Privacy Policy</a>.</li>
-                            <li>We do <strong>not</strong> sell user data to third parties.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">8. Service Availability</h2>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>We strive to maintain reliable services but cannot guarantee uninterrupted or error-free
-                                operation.</li>
-                            <li>Outages or maintenance may occur.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">9. Disclaimers</h2>
-                        <p>
-                            The services are provided “as is” without warranties of any kind. To the fullest extent
-                            permitted by law,
-                            AppAmbit disclaims all implied warranties, including merchantability, fitness for a
-                            particular purpose,
-                            and non-infringement.
+                        <h1 class="text-5xl font-bold mb-6">Terms of Service</h1>
+                        <p class="text-gray-600 text-sm font-medium dark:text-gray-400">AppAmbit Inc.</p>
+                        <p class="text-gray-500 text-sm mb-6 dark:text-gray-400">Effective Date: August 25, 2025</p>
+                        <p class="mt-4">
+                            Welcome to AppAmbit. These Terms of Service (“Terms”) govern your use of the websites, SDKs, and
+                            hosted services
+                            provided by <strong>AppAmbit Inc.</strong> (“AppAmbit,” “we,” “our,” or “us”).
+                        </p>
+                        <p class="mt-2">
+                            By accessing or using our services, you agree to these Terms. If you do not agree, you must not
+                            use AppAmbit.
                         </p>
                     </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">10. Limitation of Liability</h2>
-                        <p>To the maximum extent permitted by law:</p>
-                        <ul class="list-disc list-inside ml-5 space-y-1">
-                            <li>AppAmbit shall not be liable for indirect, incidental, or consequential damages.</li>
-                            <li>Our total liability shall not exceed the greater of $100 or the amount you paid in the
-                                past 12 months.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">11. Indemnification</h2>
-                        <p>
-                            You agree to indemnify and hold harmless AppAmbit from claims, damages, liabilities, or
-                            expenses arising
-                            from your use of the services or violation of these Terms.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">12. Modifications</h2>
-                        <p>
-                            We may revise these Terms from time to time. Continued use of the services after changes are
-                            posted
-                            constitutes acceptance of the updated Terms.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">13. Governing Law</h2>
-                        <p>
-                            These Terms are governed by the laws of the State of [Insert State of Incorporation],
-                            without regard
-                            to conflict of law principles.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">14. Contact</h2>
-                        <p>
-                            For questions about these Terms, email us at
-                            <a href="mailto:hello@appambit.com"
-                                class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.
-                        </p>
+    
+                    <div class="space-y-10">
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">1. Eligibility</h2>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>You may use AppAmbit if you are legally permitted to do so in your country of residence.
+                                </li>
+                                <li>If you are under the age of majority in your jurisdiction, you may use AppAmbit with the
+                                    consent of a parent or legal guardian.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">2. Account Registration</h2>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>You must provide accurate information when creating an account.</li>
+                                <li>You are responsible for maintaining the confidentiality of your login credentials.</li>
+                                <li>You are responsible for all activity occurring under your account.</li>
+                                <li>Notify us immediately at <a href="mailto:hello@appambit.com"
+                                        class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a> if
+                                    you suspect
+                                    unauthorized use of your account.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">3. Services</h2>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>AppAmbit provides an open source SDK and hosted services, including build distribution,
+                                    telemetry, and analytics.</li>
+                                <li>Some features may be free during beta. Paid plans may be introduced later and will be
+                                    clearly disclosed before you are charged.</li>
+                                <li>We may modify, suspend, or discontinue any aspect of the services.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">4. Acceptable Use</h2>
+                            <p>You agree not to:</p>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>Use the services for unlawful, harmful, or abusive purposes.</li>
+                                <li>Reverse engineer or copy the services, except where open source licensing expressly
+                                    allows.</li>
+                                <li>Attempt to gain unauthorized access to AppAmbit systems or data.</li>
+                                <li>Interfere with or disrupt service operation or security.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">5. Intellectual Property</h2>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>AppAmbit retains ownership of all rights, titles, and interests in its services,
+                                    software, and trademarks.</li>
+                                <li>You retain ownership of the applications, code, and content you upload or deliver
+                                    through the services.</li>
+                                <li>By using the services, you grant AppAmbit a license to process, store, and transmit your
+                                    data solely to provide the services.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">6. Subscriptions & Payments</h2>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>If paid subscriptions are offered, the fees, billing cycles, and renewal terms will be
+                                    provided at the time of purchase.</li>
+                                <li>Subscriptions automatically renew unless canceled before the renewal date.</li>
+                                <li>Payments are processed by third-party providers; AppAmbit does not store payment card
+                                    details.</li>
+                                <li>Fees are non-refundable except where required by law.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">7. Privacy</h2>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>AppAmbit collects and processes data in accordance with our <a
+                                        href="privacy-policy.html"
+                                        class="text-[#d87800] hover:underline dark:[#d87800]">Privacy Policy</a>.</li>
+                                <li>We do <strong>not</strong> sell user data to third parties.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">8. Service Availability</h2>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>We strive to maintain reliable services but cannot guarantee uninterrupted or error-free
+                                    operation.</li>
+                                <li>Outages or maintenance may occur.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">9. Disclaimers</h2>
+                            <p>
+                                The services are provided “as is” without warranties of any kind. To the fullest extent
+                                permitted by law,
+                                AppAmbit disclaims all implied warranties, including merchantability, fitness for a
+                                particular purpose,
+                                and non-infringement.
+                            </p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">10. Limitation of Liability</h2>
+                            <p>To the maximum extent permitted by law:</p>
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>AppAmbit shall not be liable for indirect, incidental, or consequential damages.</li>
+                                <li>Our total liability shall not exceed the greater of $100 or the amount you paid in the
+                                    past 12 months.</li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">11. Indemnification</h2>
+                            <p>
+                                You agree to indemnify and hold harmless AppAmbit from claims, damages, liabilities, or
+                                expenses arising
+                                from your use of the services or violation of these Terms.
+                            </p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">12. Modifications</h2>
+                            <p>
+                                We may revise these Terms from time to time. Continued use of the services after changes are
+                                posted
+                                constitutes acceptance of the updated Terms.
+                            </p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">13. Governing Law</h2>
+                            <p>
+                                These Terms are governed by the laws of the State of [Insert State of Incorporation],
+                                without regard
+                                to conflict of law principles.
+                            </p>
+                        </div>
+    
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">14. Contact</h2>
+                            <p>
+                                For questions about these Terms, email us at
+                                <a href="mailto:hello@appambit.com"
+                                    class="text-[#d87800] hover:underline dark:text-[#d87800]">hello@appambit.com</a>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-
+        </section>
+    </main>
 
 
     <!-- Footer -->
-    <footer class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="text-center sm:items-center sm:justify-between flex">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#"
-                    class="hover:underline">AppAmbit™</a>. All
-                Rights Reserved.
+    <footer class="w-full max-w-screen-xl mx-auto px-4 py-6 lg:py-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+                © 2025 <a href="Soon.html" class="hover:underline">AppAmbit™</a>. All Rights Reserved.
             </span>
-            <ul class="text-gray-500 dark:text-gray-400 text-base font-normal flex gap-10">
-                <li class="">
-                    <a href="Soon.html" class="hover:underline">Home</a>
-                </li>
-                <li class="">
+            <ul class="flex gap-6 mt-4 sm:mt-0 text-sm text-gray-500 dark:text-gray-400">
+                <li>
                     <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline">Terms of Services</a>
+                    <a href="#" class="hover:underline">Terms of Service</a>
                 </li>
             </ul>
         </div>
-        <div>
-        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

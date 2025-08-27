@@ -12,12 +12,12 @@
     </script>
 </head>
 
-<body class="bg-white dark:bg-gray-900">
+<body class="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
     <!-- Navbar -->
     <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0">
         <div class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto px-4 py-3">
             <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
-                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="40" height="40" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M46 23.0004C46 35.6833 35.6829 46.0004 23 46.0004C20.9939 46.0004 18.9906 45.7363 17.0491 45.2193L18.9372 38.1614C20.2634 38.5155 21.6289 38.6953 23 38.6953C31.6538 38.6953 38.6949 31.6542 38.6949 23.0004C38.6949 22.7616 38.6893 22.5228 38.6752 22.284C39.535 22.888 40.5802 23.2392 41.6872 23.2392C42.1423 23.2392 42.6003 23.1802 43.0442 23.0594C44.2159 22.7476 45.2189 22.0564 45.9214 21.0898C45.9747 21.7248 46 22.3626 46 23.0004Z"
                         fill="#26A7DF" />
@@ -68,77 +68,73 @@
         </div>
     </nav>
 
-    <!-- Coming Soong Section -->
-    <section class="relative">
-        <div class="w-full md:max-w-5xl px-4 md:px-5 lg:px-5 mx-auto">
-            <div
-                class="w-full md:px-16 px-10 md:pt-16 pt-10 pb-10 flex-col justify-end items-center lg:gap-28 md:gap-16 gap-10 inline-flex">
-                <div class="flex-col justify-end items-center lg:gap-16 gap-10 flex">
-                    <div class="flex-col justify-center items-center gap-10 flex">
-                        <div class="flex-col justify-start items-center gap-2.5 flex">
-                            <h2
-                                class="text-center bg-gradient-to-r from-[#F6931D] to-[#27A9E0] bg-clip-text text-transparent md:text-6xl text-5xl font-bold font-manrope md:leading-normal">
-                                Coming Soon</h2>
-                            <h2
-                                class="text-center text-black dark:text-white md:text-4xl text-3xl font-bold font-manrope leading-normal">
-                                We’re getting things set up.</h2>
-                            <p class="text-center text-gray-500 text-base font-normal leading-relaxed">
-                                AppAmbit is almost ready.<br />
-                                We’re putting the final touches on a platform to help you track, debug, and deliver
-                                mobile apps faster.<br />
-                                Check back soon — or leave your email to be notified when we launch.
-                            </p>
-                        </div>
-                        <div class="w-full flex-col justify-center items-center gap-5 flex">
-                            <div class="justify-center items-center gap-2.5 flex sm:flex-row flex-col">
-                                <input type="email" id="emailInput"
-                                    class="w-80 focus:outline-none px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] text-black dark:text-white placeholder-gray-400 text-sm font-normal leading-relaxed h-10 rounded-lg border border-[#32404B] focus:border-emerald-400 transition-colors bg-white dark:bg-gray-900 justify-start items-center gap-1.5 inline-flex"
-                                    placeholder="Type your email..." required>
-                                <button id="notifyBtn" disabled
-                                    class="sm:w-fit w-full px-3.5 py-2 bg-gray-600 cursor-not-allowed transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex disabled:bg-gray-600 enabled:bg-[#D87800] enabled:hover:bg-[#B35108] enabled:cursor-pointer">
-                                    <span id="btnText"
-                                        class="px-1.5 text-white text-sm font-medium leading-6 whitespace-nowrap">Notify
-                                        Me</span>
-                                    <div id="spinner" class="hidden ml-2">
-                                        <svg class="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg"
-                                            fill="none" viewBox="0 0 24 24">
-                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
-                                                stroke-width="4"></circle>
-                                            <path class="opacity-75" fill="currentColor"
-                                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </button>
+    <main class="flex-grow">
+        <!-- Coming Soong Section -->
+        <section class="relative">
+            <div class="w-full md:max-w-5xl px-4 md:px-5 lg:px-5 mx-auto">
+                <div
+                    class="w-full md:px-16 px-10 md:pt-16 pt-10 pb-10 flex-col justify-end items-center lg:gap-28 md:gap-16 gap-10 inline-flex">
+                    <div class="flex-col justify-end items-center lg:gap-16 gap-10 flex">
+                        <div class="flex-col justify-center items-center gap-10 flex">
+                            <div class="flex-col justify-start items-center gap-2.5 flex">
+                                <h2
+                                    class="text-center bg-gradient-to-r from-[#F6931D] to-[#27A9E0] bg-clip-text text-transparent md:text-6xl text-5xl font-bold font-manrope md:leading-normal">
+                                    Coming Soon</h2>
+                                <h2
+                                    class="text-center text-black dark:text-white md:text-4xl text-3xl font-bold font-manrope leading-normal">
+                                    We’re getting things set up.</h2>
+                                <p class="text-center text-gray-500 text-base font-normal leading-relaxed">
+                                    AppAmbit is almost ready.<br />
+                                    We’re putting the final touches on a platform to help you track, debug, and deliver
+                                    mobile apps faster.<br />
+                                    Check back soon — or leave your email to be notified when we launch.
+                                </p>
+                            </div>
+                            <div class="w-full flex-col justify-center items-center gap-5 flex">
+                                <div class="justify-center items-center gap-2.5 flex sm:flex-row flex-col">
+                                    <input type="email" id="emailInput"
+                                        class="w-80 focus:outline-none px-3.5 py-2 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] text-black dark:text-white placeholder-gray-400 text-sm font-normal leading-relaxed h-10 rounded-lg border border-[#32404B] focus:border-emerald-400 transition-colors bg-white dark:bg-gray-900 justify-start items-center gap-1.5 inline-flex"
+                                        placeholder="Type your email..." required>
+                                    <button id="notifyBtn" disabled
+                                        class="sm:w-fit w-full px-3.5 py-2 bg-gray-600 cursor-not-allowed transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex disabled:bg-gray-600 enabled:bg-[#D87800] enabled:hover:bg-[#B35108] enabled:cursor-pointer">
+                                        <span id="btnText"
+                                            class="px-1.5 text-white text-sm font-medium leading-6 whitespace-nowrap">Notify
+                                            Me</span>
+                                        <div id="spinner" class="hidden ml-2">
+                                            <svg class="animate-spin h-4 w-4 text-white"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                                    stroke-width="4"></circle>
+                                                <path class="opacity-75" fill="currentColor"
+                                                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
     <!-- Footer -->
-    <footer class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="text-center sm:items-center sm:justify-between flex">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#"
-                    class="hover:underline">AppAmbit™</a>. All
-                Rights Reserved.
+    <footer class="w-full max-w-screen-xl mx-auto px-4 py-6 lg:py-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+                © 2025 <a href="Soon.html" class="hover:underline">AppAmbit™</a>. All Rights Reserved.
             </span>
-            <ul class="text-gray-500 dark:text-gray-400 text-base font-normal flex gap-10">
-                <li class="">
-                    <a href="#" class="hover:underline">Home</a>
-                </li>
-                <li class="">
+            <ul class="flex gap-6 mt-4 sm:mt-0 text-sm text-gray-500 dark:text-gray-400">
+                <li>
                     <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="terms-of-services.html" class="hover:underline">Terms of Services</a>
+                    <a href="terms-of-services.html" class="hover:underline">Terms of Service</a>
                 </li>
             </ul>
-        </div>
-        <div>
         </div>
     </footer>
 
